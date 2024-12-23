@@ -1,0 +1,11 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore all __pycache__ directories everywhere
+__pycache__/
+
+# Ignore the images directory at the root
+/images/
+
+# Ignore any 'images' directories anywhere in the repository
+images/

@@ -9,3 +9,5 @@ __pycache__/
 
 # Ignore any 'images' directories anywhere in the repository
 images/
+/calibration_images/
+calibration_images/

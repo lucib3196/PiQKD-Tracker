@@ -11,7 +11,7 @@ faceClassifier = cv2.CascadeClassifier(HAAR_CASCADE_FACE)
 eyeClassifier = cv2.CascadeClassifier(HAAR_CASCADE_EYES)
 
 # Initialize the camera
-camera = initialize_camera_feed()
+camera = initialize_camera_feed(1)
 camera_matrix,camera_distortion_coefficients = load_camera_calibration()
 print("Press 'q' to quit.")
 

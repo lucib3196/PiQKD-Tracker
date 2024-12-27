@@ -5,6 +5,7 @@ from . import initialize_camera_feed, load_camera_calibration
 from gpiozero import AngularServo
 import numpy as np
 import time
+print("OpenCV version:", cv2.__version__)
 # Initialize the FaceDetector object
 # minDetectionCon: Minimum detection confidence threshold
 # modelSelection: 0 for short-range detection (2 meters), 1 for long-range detection (5 meters)
@@ -36,6 +37,11 @@ base_servo.angle = servo_x
 upper_servo.angle = servo_y
 
 time.sleep(1)
+
+
+target_frequency = 1 / 30
+camera.set(cv2.CAP_PROP_FPS, target_frequency)
+
 
 while True:
     # Read a frame from the camera

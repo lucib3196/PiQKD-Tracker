@@ -1,29 +1,21 @@
 import cv2
-import cv2.aruco as aruco
+from gpiozero import AngularServo
 import numpy as np
-import pickle
-import os
-from threading import Thread
-from . import WebcamVideoStreamThreaded, FPS, putIterationsPerSec
+import time
+from . import WebcamVideoStreamThreaded, FPS, putIterationsPerSec, VideoShow
 
+from gpiozero.pins.pigpio import PiGPIOFactory
+from gpiozero import Device
+Device.pin_factory = PiGPIOFactory()
 
+# Initialize servos
+base_servo = AngularServo(17, min_angle=-90, max_angle=90)
+upper_servo = AngularServo(27, min_angle=-90, max_angle=90)
 
-def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, aruco_dict_type=cv2.aruco.DICT_6X6_250):
-    """
-    Detects ArUco markers and overlays their corner coordinates and 3D pose axes.
-
-    Parameters:
-    - image_frame: The frame in which to detect markers.
-    - camera_matrix: Camera calibration matrix.
-    - distortion_coeff: Distortion coefficients from camera calibration.
-    - aruco_dict_type: Type of ArUco dictionary to use.
-
-    Returns:
-    - Annotated frame with detected markers and 3D pose axes.
-    """
+def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, marker_length=0.038, aruco_dict_type=cv2.aruco.DICT_6X6_250, last_center=(0, 0)):
     # Convert the image to grayscale for marker detection
     gray = cv2.cvtColor(image_frame, cv2.COLOR_BGR2GRAY)
-    
+
     # Load the predefined ArUco dictionary and detection parameters
     aruco_dict = cv2.aruco.getPredefinedDictionary(aruco_dict_type)
     parameters = cv2.aruco.DetectorParameters()
@@ -33,11 +25,11 @@ def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, aruco_dict
     corners, ids, rejected = detector.detectMarkers(gray)
     print("Detected Marks:", ids)
 
-    if ids is not None:
-        # Process each detected marker
+    center = last_center  # Default to the last known center when no markers are detected
+
+    if ids is not None and len(ids) > 0:
         for marker_corner, marker_id in zip(corners, ids):
             print(f"[INFO] Marker ID: {marker_id}")
-
             # Extract and reshape marker corners
             corners_abcd = marker_corner.reshape((4, 2))
             (top_left, top_right, bottom_right, bottom_left) = corners_abcd
@@ -47,43 +39,42 @@ def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, aruco_dict
             top_right = (int(top_right[0]), int(top_right[1]))
             bottom_right = (int(bottom_right[0]), int(bottom_right[1]))
             bottom_left = (int(bottom_left[0]), int(bottom_left[1]))
-            
+
             # Calculate the center of the marker
             center_x = (top_left[0] + top_right[0] + bottom_right[0] + bottom_left[0]) // 4
             center_y = (top_left[1] + top_right[1] + bottom_right[1] + bottom_left[1]) // 4
             center = (center_x, center_y)
-
 
             # Draw lines connecting the marker corners
             cv2.line(image_frame, top_left, top_right, (0, 255, 0), 2)
             cv2.line(image_frame, top_right, bottom_right, (0, 255, 0), 2)
             cv2.line(image_frame, bottom_right, bottom_left, (0, 255, 0), 2)
             cv2.line(image_frame, bottom_left, top_left, (0, 255, 0), 2)
-            
-            cv2.circle(image_frame, center, 5, (255, 0, 255), cv2.FILLED) # Center dot 
+
+            cv2.circle(image_frame, center, 5, (255, 0, 255), cv2.FILLED)  # Center dot
 
             # Estimate the marker's pose
-            marker_length = 0.038  # Marker size in meters
             rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers(marker_corner, marker_length, camera_matrix, distortion_coeff)
 
             # Calculate and display the marker's distance
             distance = np.linalg.norm(tvec) * 100  # Convert to cm
             cv2.drawFrameAxes(image_frame, camera_matrix, distortion_coeff, rvec, tvec, marker_length)
             cv2.putText(image_frame, f"Distance: {distance:.2f} cm", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 3)
+    else:
+        print("[INFO] No markers detected.")
+        # Maintain the last center to prevent jittering
 
-    return image_frame
+    return image_frame, center
 
-def thread_video_stream(source=0):
-    """
-    Runs video capturing and displaying in separate threads.
-
-    Parameters:
-    - source: Video source index or file path.
-    """
+def main(src=0):
+    # Define the camera
     # Initialize the video stream and display threads
-    video_stream = WebcamVideoStreamThreaded(source).start()
+    video_stream = WebcamVideoStreamThreaded(src).start()
     video_display = VideoShow(video_stream.frame).start()
     fps_counter = FPS().start()
+
+    # Keep track of the last center position
+    last_center = (0, 0)
 
     while True:
         # Stop threads if either thread signals to stop
@@ -91,24 +82,38 @@ def thread_video_stream(source=0):
             video_stream.stop()
             video_display.stop()
             break
-
-        # Process the current frame
+        
         frame = video_stream.frame
         if frame is not None:
-            frame_with_markers = detect_aruco_marker(
+            frame_with_markers, center = detect_aruco_marker(
                 image_frame=frame,
                 camera_matrix=video_stream.camera_matrix,
-                distortion_coeff=video_stream.camera_dist
+                distortion_coeff=video_stream.camera_dist,
+                last_center=last_center
             )
+
+            # Update last center to the current center
+            last_center = center
+
             # Overlay FPS information on the frame
             frame_with_fps = putIterationsPerSec(frame_with_markers, fps_counter.fps())
+
+            # Map the center coordinates to servo angles
+            servo_x = np.interp(center[0], [0, video_stream.frame_width], [-90, 90])
+            servo_y = np.interp(center[1], [0, video_stream.frame_height], [-90, 90])
+
+            # Update servo positions
+            base_servo.angle = servo_x
+            upper_servo.angle = servo_y
+
+            # Display the servo angles on the frame
+            cv2.putText(frame_with_fps, f'Servo X: {servo_x:.2f} deg', (50, 50), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
+            cv2.putText(frame_with_fps, f'Servo Y: {servo_y:.2f} deg', (50, 100), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
+
             video_display.frame = frame_with_fps
 
         # Update FPS counter
         fps_counter.update()
 
-if __name__ == "__main__":
-    """
-    Main function to start the threaded video stream with ArUco marker detection.
-    """
-    thread_video_stream(0)
+if __name__ == '__main__':
+    main()

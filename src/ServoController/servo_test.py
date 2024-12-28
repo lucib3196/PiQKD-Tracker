@@ -1,6 +1,9 @@
 from gpiozero import AngularServo
 from time import sleep
+# from gpiozero import Device
+# from gpiozero.pins.pigpio import PiGPIOFactory
 
+# Device.pin_factory = PiGPIOFactory()
 """
 This script demonstrates basic control of two servos using the GPIO Zero library.
 
@@ -21,12 +24,14 @@ Note:
 Requirements:
 - GPIO Zero library: Install it with `pip install gpiozero`
 """
-
+from gpiozero.pins.pigpio import PiGPIOFactory
+from gpiozero import Device
+Device.pin_factory = PiGPIOFactory()
 # Initialize the base servo on GPIO pin 17 with a range from -90 to 90 degrees
-base_servo = AngularServo(17, min_angle=-90, max_angle=90)
+base_servo = AngularServo(17,min_angle=-90,max_angle = 90)
 
 # Initialize the upper servo on GPIO pin 27 with a range from -45 to 45 degrees
-upper_servo = AngularServo(27, min_angle=-90, max_angle=90)
+upper_servo = AngularServo(27,min_angle=-90,max_angle = 90)
 
 # Infinite loop to test the servos
 try:
@@ -43,14 +48,28 @@ try:
 
         # Move the upper servo to its minimum angle (-45 degrees)
         upper_servo.angle = -90
-        print("Upper servo set to -45 degrees")
+        print("Upper servo set to -90 degrees")
         sleep(2)  # Wait for 2 seconds
 
         # Move the upper servo to its maximum angle (45 degrees)
         upper_servo.angle = 90
-        print("Upper servo set to 45 degrees")
+        print("Upper servo set to  degrees")
         sleep(2)  # Wait for 2 seconds
 
 except KeyboardInterrupt:
     # Handle exit gracefully on Ctrl+C
     print("\nTest interrupted. Exiting...")
+
+
+# from gpiozero import Servo
+# from time import sleep
+
+# servo = Servo(17)
+
+# while True:
+#     servo.min()
+#     sleep(2)
+#     servo.mid()
+#     sleep(2)
+#     servo.max()
+#     sleep(2)

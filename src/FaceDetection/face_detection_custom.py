@@ -1,21 +1,23 @@
 import cv2
-from . import initialize_camera_feed, load_camera_calibration
+from gpiozero import AngularServo
+import numpy as np
+import time
+from . import WebcamVideoStreamThreaded, FPS, putIterationsPerSec, VideoShow
 
-# Define the trained XML classifiers
+from gpiozero.pins.pigpio import PiGPIOFactory
+from gpiozero import Device
+Device.pin_factory = PiGPIOFactory()
 
-HAAR_CASCADE_FACE = r'src\FaceDetection\haarcascade_frontalface_default.xml'
-HAAR_CASCADE_EYES = r'src\FaceDetection\haarcascade_eye.xml'
+
+
+HAAR_CASCADE_FACE = r'src/FaceDetection/haarcascade_frontalface_default.xml'
+HAAR_CASCADE_EYES = r'src/FaceDetection/haarcascade_eye.xml'
 
 # Intialize the face classifier
 faceClassifier = cv2.CascadeClassifier(HAAR_CASCADE_FACE)
 eyeClassifier = cv2.CascadeClassifier(HAAR_CASCADE_EYES)
 
-# Initialize the camera
-camera = initialize_camera_feed(1)
-camera_matrix,camera_distortion_coefficients = load_camera_calibration()
-print("Press 'q' to quit.")
-
-
+print(eyeClassifier)
 def detect_faces(img_frame):
     # Convert to gray scale for faster processing
     gray = cv2.cvtColor(img_frame, cv2.COLOR_BGR2GRAY)
@@ -48,30 +50,32 @@ def detect_faces(img_frame):
     cv2.putText(img_frame, text, (10, 30), font, 1, (255, 0, 0), 2)
 
     return img_frame  # Return the processed frame
+
+def main(src=0):
+    # Initialize the video stream and display threads
+    video_stream = WebcamVideoStreamThreaded(src).start()
+    video_display = VideoShow(video_stream.frame).start()
+    fps_counter = FPS().start()
     
-        
-
-while True:
-    ret, frame = camera.read()
-    if not ret:
-            print("Error: Unable to read from the camera.")
-            break
-    # Undistort the frame
-    h, w = frame.shape[:2]
-    new_camera_mtx, roi = cv2.getOptimalNewCameraMatrix(
-        camera_matrix, camera_distortion_coefficients, (w, h), 1, (w, h)
-    )
-    undistorted_frame = cv2.undistort(
-        frame, camera_matrix, camera_distortion_coefficients, None, new_camera_mtx
-    )
-    x, y, w, h = roi
-    undistorted_frame = undistorted_frame[y : y + h, x : x + w]
-    frame_with_faces = detect_faces(frame)
-    cv2.imshow('Result',frame_with_faces)
+    # Keep track of the last center position
+    last_center = (0, 0)
     
-    if cv2.waitKey(1) & 0xFF == ord("q"):
+    while True:
+    # Stop threads if either thread signals to stop
+        if video_stream.stopped or video_display.stopped:
+            video_stream.stop()
+            video_display.stop()
             break
+        frame = video_stream.frame
+        if frame is not None:
+            frame = detect_faces(frame)
+            frame_with_fps = putIterationsPerSec(frame, fps_counter.fps())
+            # video_display.frame = frame_with_fps
 
-
-camera.release()
-cv2.destroyAllWindows()
+        # Update FPS counter
+        fps_counter.update()
+if __name__ == "__main__":
+    """
+    Main function to start the threaded video stream with ArUco marker detection.
+    """
+    main(0)

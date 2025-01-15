@@ -27,6 +27,8 @@ def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, aruco_dict
     # Load the predefined ArUco dictionary and detection parameters
     aruco_dict = cv2.aruco.getPredefinedDictionary(aruco_dict_type)
     parameters = cv2.aruco.DetectorParameters()
+    
+    
     detector = cv2.aruco.ArucoDetector(aruco_dict, parameters)
 
     # Detect markers in the grayscale frame

@@ -65,7 +65,9 @@ def load_camera_calibration():
 
     return define_camera_settings(camera_matrix_path, camera_distortion_path)
 
-class WebcamVideoStreamThreaded:
+
+
+class WebcamVideoStreamThreaded():
     """
     A class for threaded video capture from a webcam.
 
@@ -110,6 +112,7 @@ class WebcamVideoStreamThreaded:
         """
         while not self.stopped:
             if not self.grabbed:
+                self.grabbed.release()
                 self.stop()
             else:
                 self.grabbed, self.frame = self.stream.read()
@@ -144,6 +147,7 @@ class WebcamVideoStreamThreaded:
         Stop the video stream thread by setting the stopped flag to True.
         """
         self.stopped = True
+        
 
 def thread_video_get(src=0):
     """
@@ -168,6 +172,8 @@ def thread_video_get(src=0):
         frame = putIterationsPerSec(frame, fps_counter.fps())
         cv2.imshow("Video", frame)
         fps_counter.update()
+        
+        
 class VideoShow:
     """
     Handles displaying frames in a separate thread.
@@ -205,6 +211,10 @@ class VideoShow:
         Stops the video display thread by setting the stopped flag to True.
         """
         self.stopped = True
+
+
+
+
 if __name__ == "__main__":
     """
     Main function to execute the threaded camera test.

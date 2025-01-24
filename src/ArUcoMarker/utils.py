@@ -1,11 +1,12 @@
+# This code contains multiple utility functions of the servo control
+
+
 import cv2
 import cv2.aruco as aruco
-import time
+import time 
 import numpy as np
-from . import WebcamVideoStreamThreaded, FPS, putIterationsPerSec, VideoShow
-import traceback
-import numpy
-# Constants
+
+# Constants 
 aruco_dict_type = cv2.aruco.DICT_6X6_250
 
 def find_marker(frame, aruco_dict, parameters):
@@ -30,7 +31,8 @@ def find_marker(frame, aruco_dict, parameters):
             marker_arr.append((marker_corner, marker_id))
 
     return marker_arr
-
+    
+    
 def get_corner_and_center(marker_corner):
     """
     Calculates the corners and center of an ArUco marker.
@@ -57,6 +59,7 @@ def get_corner_and_center(marker_corner):
     center = (center_x, center_y)
 
     return [top_left, top_right, bottom_right, bottom_left, center]
+
 
 def draw_id(frame, coor, marker_id):
     """
@@ -294,77 +297,3 @@ def determine_intersection_point(x, y, u, v):
 
     # Return the first intersection point as a tuple
     return float(intersection[0]), float(y_val[0])
-
-    
-
-def main(src=1):
-    """
-    Main function to process video stream and detect ArUco markers.
-
-    Parameters:
-        src (int): The video source (default is 1).
-
-    Returns:
-        None
-    """
-    
-    marker_hold = True # This just says to hold the marker position
-    
-    try:
-        video_stream = WebcamVideoStreamThreaded(src).start()
-        video_display = VideoShow(video_stream.frame).start()
-        fps_counter = FPS().start()
-
-        while True:
-            if video_stream.stopped or video_display.stopped:
-                video_stream.stop()
-                video_display.stop()
-                break
-
-            frame = video_stream.frame
-            if frame is not None:
-                # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                # # Try to increase the contrast of the image requires more work 
-                # clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-                # gray = clahe.apply(gray)
-                gray=frame
-                
-                aruco_dict = cv2.aruco.getPredefinedDictionary(aruco_dict_type)
-                parameters = cv2.aruco.DetectorParameters()
-
-                marker_array = find_marker(frame, aruco_dict, parameters)
-                display_spec(gray, marker_array)
-                
-
-                if marker_array:
-                    estimate_marker_pose_multiple(frame,marker_array,camera_matrix=video_stream.camera_matrix, distortion_coeff=video_stream.camera_dist)
-
-                    if len(marker_array)==4:
-                        draw_bounded_area(gray,marker_array)
-                        
-                    # Draw stuff on the marker for detection 
-                    for marker, id in marker_array:
-                        coord = get_corner_and_center(marker)
-                        draw_id(frame, coord, id)
-                        draw_rounder_corner(frame, coord)
-                        draw_square_frame(frame,coordinates=coord)
-                        
-                        
-
-                frame_with_fps = putIterationsPerSec(gray, fps_counter.fps())
-                video_display.frame = frame_with_fps
-
-                if cv2.waitKey(1) & 0xFF == ord('q'):
-                    break
-
-            fps_counter.update()
-
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        traceback.print_exc()
-        video_stream.stop()
-        video_display.stop()
-        exit()
-
-if __name__ == '__main__':
-    main()

@@ -8,8 +8,10 @@ from gpiozero.pins.pigpio import PiGPIOFactory
 from gpiozero import Device
 Device.pin_factory = PiGPIOFactory()
 
+BASE_MIN = 0
+BASE_MAX = 270
 # Initialize servos
-base_servo = AngularServo(17, min_angle=-90, max_angle=90)
+base_servo = AngularServo(17, min_angle=BASE_MIN, max_angle=BASE_MAX)
 upper_servo = AngularServo(27, min_angle=-90, max_angle=90)
 
 def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, marker_length=0.038, aruco_dict_type=cv2.aruco.DICT_6X6_250, last_center=(0, 0)):
@@ -99,7 +101,7 @@ def main(src=0):
             frame_with_fps = putIterationsPerSec(frame_with_markers, fps_counter.fps())
 
             # Map the center coordinates to servo angles
-            servo_x = np.interp(center[0], [0, video_stream.frame_width], [-90, 90])
+            servo_x = np.interp(center[0], [0, video_stream.frame_width], [BASE_MIN, BASE_MAX])
             servo_y = np.interp(center[1], [0, video_stream.frame_height], [-90, 90])
 
             # Update servo positions

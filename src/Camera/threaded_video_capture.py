@@ -103,8 +103,9 @@ class WebcamVideoStreamThreaded():
         Returns:
         - self: The instance of the class to allow method chaining.
         """
-        Thread(target=self.get, args=()).start()
+        self.video_thread = Thread(target=self.get, args=()).start()
         return self
+    
 
     def get(self):
         """
@@ -147,6 +148,8 @@ class WebcamVideoStreamThreaded():
         Stop the video stream thread by setting the stopped flag to True.
         """
         self.stopped = True
+        
+    
         
 
 def thread_video_get(src=0):
@@ -193,7 +196,7 @@ class VideoShow:
         Returns:
         - self: Instance of the VideoShow class for method chaining.
         """
-        Thread(target=self.show, args=()).start()
+        self.video_thread=Thread(target=self.show, args=()).start()
         return self
 
     def show(self):

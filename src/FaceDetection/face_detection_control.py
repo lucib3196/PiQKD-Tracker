@@ -11,14 +11,14 @@ import time
 Device.pin_factory = PiGPIOFactory()
 
 # Initialize servos
-base_servo = AngularServo(17, min_angle=-90, max_angle=90)
+base_servo = AngularServo(17, min_angle=-135, max_angle=135)
 upper_servo = AngularServo(27, min_angle=-90, max_angle=90)
 
 # Set initial servo angles
 servo_x = 0
 servo_y = 0
 base_servo.angle = servo_x
-upper_servo.angle = servo_y
+# upper_servo.angle = servo_y
 
 def main(src=0):
     """
@@ -79,10 +79,10 @@ def main(src=0):
 
                 # Servo and Position Mapping (Update only when necessary)
                 if time.time() - last_update_time >= update_interval:
-                    servo_x = np.interp(center[0], [0, video_stream.frame_width], [-90, 90])
-                    servo_y = np.interp(center[1], [0, video_stream.frame_height], [-90, 90])
+                    servo_x = np.interp(center[0], [0, video_stream.frame_width], [-135, 135])
+                    servo_y = np.interp(center[1], [0, video_stream.frame_height], [90, -90])
                     base_servo.angle = servo_x
-                    upper_servo.angle = servo_y
+                    # upper_servo.angle = servo_y
                     last_update_time = time.time()
 
                 # Display x and y position below the bounding box

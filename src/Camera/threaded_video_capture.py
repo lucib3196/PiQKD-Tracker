@@ -189,7 +189,7 @@ class VideoShow:
         self.frame = frame
         self.stopped = False
 
-    def start(self):
+    def start(self,):
         """
         Starts the thread to display video frames.
 

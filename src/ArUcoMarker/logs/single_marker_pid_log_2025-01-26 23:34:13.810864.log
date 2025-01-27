@@ -1,0 +1,26 @@
+2025-01-26 23:34:13,811 - INFO - Logging system initialized.
+2025-01-26 23:34:13,817 - INFO - 
+Pan and Tilt Mechanism: 
+Current Date:  2025-01-26
+
+-------------------------Running Parameters-------------------------
+
+Pan Servo: Pin 17 PID Values:  
+ KP: 100
+ KI: 0
+ KD: 30 Angle Range -135-135 Current Angle -0.0 
+ 
+Tilt Servo: Pin 27 PID Values:  
+ KP: 60
+ KI: 0
+ KD: 10 Angle Range -135-135 Current Angle -0.0 
+ 
+Threading Events (Boolean) 
+ Show Plots: True 
+ Show Feed True
+-------------------------
+
+
+2025-01-26 23:34:19,796 - INFO - Error in the x: -0.35 Error in the y -0.6833333333333333 time: 5.903519630432129 
+2025-01-26 23:34:19,798 - INFO - Pan Adjustment: 36.77859999751223, Tilt Adjustment: 42.15750158568257 time: 5.903519630432129
+2025-01-26 23:34:19,803 - INFO - Pan Servo Angle: 35.64, Tilt Servo Angle: 41.58

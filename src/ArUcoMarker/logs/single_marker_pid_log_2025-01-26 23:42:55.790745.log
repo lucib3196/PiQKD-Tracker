@@ -1,0 +1,107 @@
+2025-01-26 23:42:55,795 - INFO - Logging system initialized.
+2025-01-26 23:42:55,816 - INFO - 
+Pan and Tilt Mechanism: 
+Current Date:  2025-01-26
+
+-------------------------Running Parameters-------------------------
+
+Pan Servo: Pin 17 PID Values:  
+ KP: 100
+ KI: 0
+ KD: 30 Angle Range -135-135 Current Angle -0.0 
+ 
+Tilt Servo: Pin 27 PID Values:  
+ KP: 60
+ KI: 0
+ KD: 10 Angle Range -135-135 Current Angle -0.0 
+ 
+Threading Events (Boolean) 
+ Show Plots: True 
+ Show Feed True
+-------------------------
+
+
+2025-01-26 23:43:00,339 - INFO - Error in the x: -0.875 Error in the y -0.7333333333333333 time: 4.46536111831665 
+2025-01-26 23:43:00,340 - INFO - Pan Adjustment: 93.37858390496662, Tilt Adjustment: 45.642271059165274 time: 4.46536111831665
+2025-01-26 23:43:00,343 - INFO - Pan Servo Angle: 92.88, Tilt Servo Angle: 44.82
+2025-01-26 23:43:00,465 - INFO - Error in the x: -0.81875 Error in the y -0.6958333333333333 time: 4.527766942977905 
+2025-01-26 23:43:00,466 - INFO - Pan Adjustment: 81.50229972163935, Tilt Adjustment: 41.667177715919856 time: 4.527766942977905
+2025-01-26 23:43:00,468 - INFO - Pan Servo Angle: 81.0, Tilt Servo Angle: 40.5
+2025-01-26 23:43:00,500 - INFO - Error in the x: -0.796875 Error in the y -0.6791666666666667 time: 4.653393268585205 
+2025-01-26 23:43:00,501 - INFO - Pan Adjustment: 79.54647387946333, Tilt Adjustment: 40.714183842403386 time: 4.653393268585205
+2025-01-26 23:43:00,502 - INFO - Pan Servo Angle: 78.84, Tilt Servo Angle: 39.96
+2025-01-26 23:43:00,563 - INFO - Error in the x: -0.759375 Error in the y -0.65 time: 4.686720609664917 
+2025-01-26 23:43:00,563 - INFO - Pan Adjustment: 75.69746008857878, Tilt Adjustment: 38.937767430372276 time: 4.686720609664917
+2025-01-26 23:43:00,565 - INFO - Pan Servo Angle: 74.52, Tilt Servo Angle: 37.8
+2025-01-26 23:43:00,768 - INFO - Error in the x: 0.66875 Error in the y -0.23333333333333334 time: 4.902041673660278 
+2025-01-26 23:43:00,768 - INFO - Pan Adjustment: -75.61498077784786, Tilt Adjustment: 13.150014025981243 time: 4.902041673660278
+2025-01-26 23:43:00,770 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 12.96
+2025-01-26 23:43:00,796 - INFO - Error in the x: 0.69375 Error in the y -0.225 time: 4.953858852386475 
+2025-01-26 23:43:00,796 - INFO - Pan Adjustment: -69.5263971274411, Tilt Adjustment: 13.483178096950988 time: 4.953858852386475
+2025-01-26 23:43:00,799 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 12.96
+2025-01-26 23:43:00,824 - INFO - Error in the x: 0.703125 Error in the y -0.22916666666666666 time: 4.982951879501343 
+2025-01-26 23:43:00,825 - INFO - Pan Adjustment: -70.36894244752935, Tilt Adjustment: 13.758361844078422 time: 4.982951879501343
+2025-01-26 23:43:00,827 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 12.96
+2025-01-26 23:43:00,871 - INFO - Error in the x: 0.70625 Error in the y -0.2375 time: 5.010869741439819 
+2025-01-26 23:43:00,872 - INFO - Pan Adjustment: -70.64370932689084, Tilt Adjustment: 14.266630512791854 time: 5.010869741439819
+2025-01-26 23:43:00,874 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 13.5
+2025-01-26 23:43:00,921 - INFO - Error in the x: 0.709375 Error in the y -0.23333333333333334 time: 5.057955503463745 
+2025-01-26 23:43:00,921 - INFO - Pan Adjustment: -70.95603515712737, Tilt Adjustment: 13.991762152387832 time: 5.057955503463745
+2025-01-26 23:43:00,923 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 12.96
+2025-01-26 23:43:01,152 - INFO - Error in the x: -0.525 Error in the y -0.4041666666666667 time: 5.295952320098877 
+2025-01-26 23:43:01,152 - INFO - Pan Adjustment: 59.49236846590579, Tilt Adjustment: 24.572573397583277 time: 5.295952320098877
+2025-01-26 23:43:01,154 - INFO - Pan Servo Angle: 58.86, Tilt Servo Angle: 23.76
+2025-01-26 23:43:01,196 - INFO - Error in the x: -0.58125 Error in the y -0.4125 time: 5.338622570037842 
+2025-01-26 23:43:01,197 - INFO - Pan Adjustment: 58.44109277072158, Tilt Adjustment: 24.765609519541805 time: 5.338622570037842
+2025-01-26 23:43:01,199 - INFO - Pan Servo Angle: 57.78, Tilt Servo Angle: 23.76
+2025-01-26 23:43:01,224 - INFO - Error in the x: -0.60625 Error in the y -0.4166666666666667 time: 5.382795333862305 
+2025-01-26 23:43:01,225 - INFO - Pan Adjustment: 60.76433281008881, Tilt Adjustment: 25.0077407116716 time: 5.382795333862305
+2025-01-26 23:43:01,227 - INFO - Pan Servo Angle: 59.94, Tilt Servo Angle: 24.84
+2025-01-26 23:43:01,273 - INFO - Error in the x: -0.60625 Error in the y -0.42083333333333334 time: 5.410923957824707 
+2025-01-26 23:43:01,274 - INFO - Pan Adjustment: 60.62499999999999, Tilt Adjustment: 25.257700471673864 time: 5.410923957824707
+2025-01-26 23:43:01,276 - INFO - Pan Servo Angle: 59.94, Tilt Servo Angle: 24.84
+2025-01-26 23:43:01,694 - INFO - Error in the x: 0.409375 Error in the y -0.3875 time: 5.809664249420166 
+2025-01-26 23:43:01,694 - INFO - Pan Adjustment: -46.18199412081618, Tilt Adjustment: 23.19262433782355 time: 5.809664249420166
+2025-01-26 23:43:01,698 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 22.68
+2025-01-26 23:43:01,760 - INFO - Error in the x: 0.4 Error in the y -0.38333333333333336 time: 5.882703065872192 
+2025-01-26 23:43:01,760 - INFO - Pan Adjustment: -39.95219034568792, Tilt Adjustment: 22.99291708825006 time: 5.882703065872192
+2025-01-26 23:43:01,766 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 21.6
+2025-01-26 23:43:01,832 - INFO - Error in the x: 0.384375 Error in the y -0.3875 time: 5.950567722320557 
+2025-01-26 23:43:01,832 - INFO - Pan Adjustment: -38.35872600365647, Tilt Adjustment: 23.257002133008314 time: 5.950567722320557
+2025-01-26 23:43:01,836 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 22.68
+2025-01-26 23:43:01,888 - INFO - Error in the x: 0.36875 Error in the y -0.3875 time: 6.021207332611084 
+2025-01-26 23:43:01,891 - INFO - Pan Adjustment: -36.797150164558985, Tilt Adjustment: 23.25 time: 6.021207332611084
+2025-01-26 23:43:01,894 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 22.68
+2025-01-26 23:43:02,107 - INFO - Error in the x: -0.684375 Error in the y -0.4125 time: 6.262395858764648 
+2025-01-26 23:43:02,107 - INFO - Pan Adjustment: 73.48249407455732, Tilt Adjustment: 24.789920823537546 time: 6.262395858764648
+2025-01-26 23:43:02,110 - INFO - Pan Servo Angle: 72.9, Tilt Servo Angle: 23.76
+2025-01-26 23:43:02,156 - INFO - Error in the x: -0.709375 Error in the y -0.4083333333333333 time: 6.293928861618042 
+2025-01-26 23:43:02,156 - INFO - Pan Adjustment: 71.05666245265715, Tilt Adjustment: 24.49337986374127 time: 6.293928861618042
+2025-01-26 23:43:02,160 - INFO - Pan Servo Angle: 70.74, Tilt Servo Angle: 23.76
+2025-01-26 23:43:02,203 - INFO - Error in the x: -0.7125 Error in the y -0.4083333333333333 time: 6.346066474914551 
+2025-01-26 23:43:02,204 - INFO - Pan Adjustment: 71.26477293066037, Tilt Adjustment: 24.5 time: 6.346066474914551
+2025-01-26 23:43:02,205 - INFO - Pan Servo Angle: 70.74, Tilt Servo Angle: 23.76
+2025-01-26 23:43:02,245 - INFO - Error in the x: -0.7125 Error in the y -0.4 time: 6.389251708984375 
+2025-01-26 23:43:02,245 - INFO - Pan Adjustment: 71.25, Tilt Adjustment: 23.986957262426184 time: 6.389251708984375
+2025-01-26 23:43:02,247 - INFO - Pan Servo Angle: 70.74, Tilt Servo Angle: 22.68
+2025-01-26 23:43:02,276 - INFO - Error in the x: -0.709375 Error in the y -0.4 time: 6.431317090988159 
+2025-01-26 23:43:02,277 - INFO - Pan Adjustment: 70.92292289259359, Tilt Adjustment: 24.0 time: 6.431317090988159
+2025-01-26 23:43:02,278 - INFO - Pan Servo Angle: 69.66, Tilt Servo Angle: 23.76
+2025-01-26 23:43:02,519 - INFO - Error in the x: 0.515625 Error in the y -0.3333333333333333 time: 6.670471429824829 
+2025-01-26 23:43:02,520 - INFO - Pan Adjustment: -57.071855730943454, Tilt Adjustment: 19.90005703889445 time: 6.670471429824829
+2025-01-26 23:43:02,521 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 18.9
+2025-01-26 23:43:02,556 - INFO - Error in the x: 0.525 Error in the y -0.3333333333333333 time: 6.705730199813843 
+2025-01-26 23:43:02,556 - INFO - Pan Adjustment: -52.54194174111088, Tilt Adjustment: 20.0 time: 6.705730199813843
+2025-01-26 23:43:02,558 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 19.98
+2025-01-26 23:43:02,593 - INFO - Error in the x: 0.51875 Error in the y -0.3416666666666667 time: 6.742429733276367 
+2025-01-26 23:43:02,593 - INFO - Pan Adjustment: -51.84719103388285, Tilt Adjustment: 20.512359540496515 time: 6.742429733276367
+2025-01-26 23:43:02,595 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 19.98
+2025-01-26 23:43:02,621 - INFO - Error in the x: 0.5125 Error in the y -0.3416666666666667 time: 6.779029130935669 
+2025-01-26 23:43:02,622 - INFO - Pan Adjustment: -51.22234117210908, Tilt Adjustment: 20.5 time: 6.779029130935669
+2025-01-26 23:43:02,626 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 19.98
+2025-01-26 23:43:02,726 - INFO - Error in the x: 0.5 Error in the y -0.3416666666666667 time: 6.8121137619018555 
+2025-01-26 23:43:02,726 - INFO - Pan Adjustment: -49.944951007410175, Tilt Adjustment: 20.5 time: 6.8121137619018555
+2025-01-26 23:43:02,729 - INFO - Pan Servo Angle: -0.0, Tilt Servo Angle: 19.98
+2025-01-26 23:43:02,913 - INFO - Error in the x: -0.875 Error in the y -0.39166666666666666 time: 7.074356555938721 
+2025-01-26 23:43:02,914 - INFO - Pan Adjustment: 93.33091899225404, Tilt Adjustment: 23.570677805966717 time: 7.074356555938721
+2025-01-26 23:43:02,915 - INFO - Pan Servo Angle: 92.88, Tilt Servo Angle: 22.68

@@ -5,6 +5,7 @@ import cv2
 import cv2.aruco as aruco
 import time 
 import numpy as np
+import math
 
 # Constants 
 aruco_dict_type = cv2.aruco.DICT_6X6_250
@@ -124,6 +125,7 @@ def estimate_marker_pose_single(frame, marker, camera_matrix, distortion_coeff, 
         (255, 255, 255),
         3
     )
+    return distance
     
 def estimate_marker_pose_multiple(frame, marker_array, camera_matrix, distortion_coeff, marker_lenght = 0.1):
     all_text = ""
@@ -297,3 +299,18 @@ def determine_intersection_point(x, y, u, v):
 
     # Return the first intersection point as a tuple
     return float(intersection[0]), float(y_val[0])
+
+def calc_dist(p1, p2):
+    x1, y1 = p1
+    x2, y2 = p2
+    return math.hypot(x1 - x2, y1 - y2)
+
+
+def correct_white_balance(frame):
+    avg_gray = np.mean(frame)
+    correction_factor = 128/avg_gray
+    corrected_frame = np.clip(frame*correction_factor,0,255).astype(np.uint8)
+    return corrected_frame
+
+def draw_center_frame(frame, center):
+    cv2.circle(frame, center, 5, (255, 0, 0), 1)

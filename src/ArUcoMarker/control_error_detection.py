@@ -33,10 +33,6 @@ def calculate_positions_error(p1,p2):
 def draw_center_frame(frame, center):
     cv2.circle(frame, center, 5, (255, 0, 0), 1)
 
-import threading
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
-
 def main(src=0):
     start_time = time.time()
     try:

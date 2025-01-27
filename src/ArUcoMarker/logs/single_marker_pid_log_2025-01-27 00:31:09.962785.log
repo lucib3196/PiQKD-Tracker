@@ -1,0 +1,141 @@
+2025-01-27 00:31:09,963 - INFO - Logging system initialized.
+2025-01-27 00:31:09,981 - INFO - 
+Pan and Tilt Mechanism: 
+Current Date:  2025-01-27
+
+-------------------------Running Parameters-------------------------
+
+Pan Servo: Pin 17 PID Values:  
+ KP: 100
+ KI: 0
+ KD: 30 Angle Range -135-135 Current Angle -0.0 
+ 
+Tilt Servo: Pin 27 PID Values:  
+ KP: 60
+ KI: 0
+ KD: 10 Angle Range -135-135 Current Angle -0.0 
+ 
+Threading Events (Boolean) 
+ Show Plots: True 
+ Show Feed True
+-------------------------
+
+
+2025-01-27 00:31:12,881 - INFO - Time: 2.79s | Error X: -0.46, Error Y: -0.86
+2025-01-27 00:31:12,901 - INFO - Pan Angle: 49.68, Tilt Angle: 53.46
+2025-01-27 00:31:13,221 - INFO - Time: 2.96s | Error X: -0.47, Error Y: -0.82
+2025-01-27 00:31:13,229 - INFO - Pan Angle: 46.98, Tilt Angle: 48.6
+2025-01-27 00:31:13,521 - INFO - Time: 3.30s | Error X: -0.49, Error Y: -0.76
+2025-01-27 00:31:13,523 - INFO - Pan Angle: 47.52, Tilt Angle: 44.82
+2025-01-27 00:31:14,038 - INFO - Time: 3.88s | Error X: 0.41, Error Y: -0.12
+2025-01-27 00:31:14,041 - INFO - Pan Angle: -0.0, Tilt Angle: 4.86
+2025-01-27 00:31:14,166 - INFO - Time: 4.10s | Error X: 0.41, Error Y: -0.11
+2025-01-27 00:31:14,233 - INFO - Pan Angle: -0.0, Tilt Angle: 5.94
+2025-01-27 00:31:14,462 - INFO - Time: 4.36s | Error X: 0.41, Error Y: -0.11
+2025-01-27 00:31:14,482 - INFO - Pan Angle: -0.0, Tilt Angle: 5.94
+2025-01-27 00:31:14,733 - INFO - Time: 4.65s | Error X: -0.47, Error Y: -0.57
+2025-01-27 00:31:14,806 - INFO - Pan Angle: 51.84, Tilt Angle: 34.56
+2025-01-27 00:31:15,014 - INFO - Time: 4.90s | Error X: -0.46, Error Y: -0.57
+2025-01-27 00:31:15,022 - INFO - Pan Angle: 45.9, Tilt Angle: 33.48
+2025-01-27 00:31:15,177 - INFO - Time: 5.09s | Error X: -0.46, Error Y: -0.58
+2025-01-27 00:31:15,200 - INFO - Pan Angle: 45.9, Tilt Angle: 33.48
+2025-01-27 00:31:15,552 - INFO - Time: 5.43s | Error X: 0.43, Error Y: -0.45
+2025-01-27 00:31:15,590 - INFO - Pan Angle: -0.0, Tilt Angle: 25.92
+2025-01-27 00:31:15,753 - INFO - Time: 5.66s | Error X: 0.42, Error Y: -0.44
+2025-01-27 00:31:15,758 - INFO - Pan Angle: -0.0, Tilt Angle: 25.92
+2025-01-27 00:31:16,084 - INFO - Time: 5.87s | Error X: 0.43, Error Y: -0.43
+2025-01-27 00:31:16,127 - INFO - Pan Angle: -0.0, Tilt Angle: 24.84
+2025-01-27 00:31:16,527 - INFO - Time: 6.45s | Error X: -0.46, Error Y: -0.44
+2025-01-27 00:31:16,538 - INFO - Pan Angle: 49.68, Tilt Angle: 25.92
+2025-01-27 00:31:16,661 - INFO - Time: 6.57s | Error X: -0.45, Error Y: -0.41
+2025-01-27 00:31:16,668 - INFO - Pan Angle: 43.74, Tilt Angle: 23.76
+2025-01-27 00:31:16,826 - INFO - Time: 6.71s | Error X: -0.43, Error Y: -0.39
+2025-01-27 00:31:16,834 - INFO - Pan Angle: 42.66, Tilt Angle: 22.68
+2025-01-27 00:31:17,322 - INFO - Time: 7.22s | Error X: 0.35, Error Y: -0.38
+2025-01-27 00:31:17,329 - INFO - Pan Angle: -0.0, Tilt Angle: 21.6
+2025-01-27 00:31:17,552 - INFO - Time: 7.37s | Error X: 0.35, Error Y: -0.38
+2025-01-27 00:31:17,596 - INFO - Pan Angle: -0.0, Tilt Angle: 21.6
+2025-01-27 00:31:17,881 - INFO - Time: 7.67s | Error X: 0.35, Error Y: -0.39
+2025-01-27 00:31:17,928 - INFO - Pan Angle: -0.0, Tilt Angle: 22.68
+2025-01-27 00:31:18,059 - INFO - Time: 8.02s | Error X: 0.36, Error Y: -0.39
+2025-01-27 00:31:18,060 - INFO - Pan Angle: -0.0, Tilt Angle: 22.68
+2025-01-27 00:31:18,467 - INFO - Time: 8.29s | Error X: -0.42, Error Y: -0.41
+2025-01-27 00:31:18,504 - INFO - Pan Angle: 44.82, Tilt Angle: 23.76
+2025-01-27 00:31:18,695 - INFO - Time: 8.56s | Error X: -0.44, Error Y: -0.40
+2025-01-27 00:31:18,740 - INFO - Pan Angle: 43.74, Tilt Angle: 23.76
+2025-01-27 00:31:18,894 - INFO - Time: 8.82s | Error X: -0.45, Error Y: -0.39
+2025-01-27 00:31:18,959 - INFO - Pan Angle: 44.82, Tilt Angle: 22.68
+2025-01-27 00:31:19,204 - INFO - Time: 9.18s | Error X: 0.36, Error Y: -0.34
+2025-01-27 00:31:19,219 - INFO - Pan Angle: -0.0, Tilt Angle: 19.98
+2025-01-27 00:31:19,375 - INFO - Time: 9.28s | Error X: 0.37, Error Y: -0.34
+2025-01-27 00:31:19,381 - INFO - Pan Angle: -0.0, Tilt Angle: 19.98
+2025-01-27 00:31:19,512 - INFO - Time: 9.42s | Error X: 0.37, Error Y: -0.34
+2025-01-27 00:31:19,542 - INFO - Pan Angle: -0.0, Tilt Angle: 19.98
+2025-01-27 00:31:19,721 - INFO - Time: 9.66s | Error X: -0.42, Error Y: -0.35
+2025-01-27 00:31:19,727 - INFO - Pan Angle: 43.74, Tilt Angle: 20.52
+2025-01-27 00:31:20,110 - INFO - Time: 9.81s | Error X: -0.41, Error Y: -0.35
+2025-01-27 00:31:20,157 - INFO - Pan Angle: 40.5, Tilt Angle: 20.52
+2025-01-27 00:31:20,373 - INFO - Time: 10.21s | Error X: -0.41, Error Y: -0.35
+2025-01-27 00:31:20,421 - INFO - Pan Angle: 39.96, Tilt Angle: 20.52
+2025-01-27 00:31:20,646 - INFO - Time: 10.59s | Error X: 0.37, Error Y: -0.34
+2025-01-27 00:31:20,684 - INFO - Pan Angle: -0.0, Tilt Angle: 19.98
+2025-01-27 00:31:20,818 - INFO - Time: 10.71s | Error X: 0.38, Error Y: -0.36
+2025-01-27 00:31:20,903 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:21,064 - INFO - Time: 10.97s | Error X: 0.38, Error Y: -0.36
+2025-01-27 00:31:21,080 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:21,296 - INFO - Time: 11.21s | Error X: -0.40, Error Y: -0.39
+2025-01-27 00:31:21,311 - INFO - Pan Angle: 41.58, Tilt Angle: 22.68
+2025-01-27 00:31:21,423 - INFO - Time: 11.39s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:21,424 - INFO - Pan Angle: 39.96, Tilt Angle: 21.6
+2025-01-27 00:31:21,464 - INFO - Time: 11.45s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:21,465 - INFO - Pan Angle: 39.96, Tilt Angle: 22.68
+2025-01-27 00:31:21,593 - INFO - Time: 11.49s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:21,598 - INFO - Pan Angle: 39.96, Tilt Angle: 21.6
+2025-01-27 00:31:22,131 - INFO - Time: 11.97s | Error X: 0.30, Error Y: -0.36
+2025-01-27 00:31:22,161 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:22,267 - INFO - Time: 12.23s | Error X: 0.30, Error Y: -0.36
+2025-01-27 00:31:22,296 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:22,466 - INFO - Time: 12.34s | Error X: 0.31, Error Y: -0.36
+2025-01-27 00:31:22,470 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:22,853 - INFO - Time: 12.59s | Error X: 0.30, Error Y: -0.37
+2025-01-27 00:31:22,872 - INFO - Pan Angle: -0.0, Tilt Angle: 21.6
+2025-01-27 00:31:23,036 - INFO - Time: 12.95s | Error X: -0.41, Error Y: -0.38
+2025-01-27 00:31:23,094 - INFO - Pan Angle: 41.58, Tilt Angle: 22.68
+2025-01-27 00:31:23,274 - INFO - Time: 13.21s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:23,293 - INFO - Pan Angle: 38.88, Tilt Angle: 22.68
+2025-01-27 00:31:23,999 - INFO - Time: 13.77s | Error X: 0.32, Error Y: -0.36
+2025-01-27 00:31:24,035 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:24,277 - INFO - Time: 14.14s | Error X: 0.33, Error Y: -0.36
+2025-01-27 00:31:24,282 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:24,693 - INFO - Time: 14.67s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:24,695 - INFO - Pan Angle: 40.5, Tilt Angle: 22.68
+2025-01-27 00:31:24,803 - INFO - Time: 14.73s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:24,812 - INFO - Pan Angle: 39.96, Tilt Angle: 22.68
+2025-01-27 00:31:25,149 - INFO - Time: 15.05s | Error X: -0.41, Error Y: -0.38
+2025-01-27 00:31:25,159 - INFO - Pan Angle: 39.96, Tilt Angle: 22.68
+2025-01-27 00:31:25,345 - INFO - Time: 15.31s | Error X: 0.30, Error Y: -0.35
+2025-01-27 00:31:25,387 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:25,608 - INFO - Time: 15.46s | Error X: 0.30, Error Y: -0.35
+2025-01-27 00:31:25,610 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:25,763 - INFO - Time: 15.67s | Error X: 0.31, Error Y: -0.34
+2025-01-27 00:31:25,796 - INFO - Pan Angle: -0.0, Tilt Angle: 19.98
+2025-01-27 00:31:26,121 - INFO - Time: 15.98s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:26,135 - INFO - Pan Angle: 40.5, Tilt Angle: 22.68
+2025-01-27 00:31:26,378 - INFO - Time: 16.21s | Error X: -0.40, Error Y: -0.38
+2025-01-27 00:31:26,398 - INFO - Pan Angle: 38.88, Tilt Angle: 21.6
+2025-01-27 00:31:26,524 - INFO - Time: 16.47s | Error X: -0.39, Error Y: -0.37
+2025-01-27 00:31:26,543 - INFO - Pan Angle: 38.88, Tilt Angle: 21.6
+2025-01-27 00:31:26,818 - INFO - Time: 16.76s | Error X: 0.31, Error Y: -0.35
+2025-01-27 00:31:26,829 - INFO - Pan Angle: -0.0, Tilt Angle: 19.98
+2025-01-27 00:31:27,024 - INFO - Time: 16.89s | Error X: 0.31, Error Y: -0.35
+2025-01-27 00:31:27,027 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:27,077 - INFO - Time: 17.06s | Error X: 0.31, Error Y: -0.35
+2025-01-27 00:31:27,079 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:27,248 - INFO - Time: 17.14s | Error X: 0.31, Error Y: -0.35
+2025-01-27 00:31:27,295 - INFO - Pan Angle: -0.0, Tilt Angle: 20.52
+2025-01-27 00:31:27,763 - INFO - Time: 17.56s | Error X: -0.40, Error Y: -0.37
+2025-01-27 00:31:27,805 - INFO - Pan Angle: 40.5, Tilt Angle: 21.6
+2025-01-27 00:31:28,055 - INFO - Time: 17.90s | Error X: -0.40, Error Y: -0.35
+2025-01-27 00:31:28,102 - INFO - Pan Angle: 39.96, Tilt Angle: 20.52
+2025-01-27 00:31:28,244 - INFO - Time: 18.18s | Error X: -0.42, Error Y: -0.37
+2025-01-27 00:31:28,246 - INFO - Pan Angle: 40.5, Tilt Angle: 21.6

@@ -121,6 +121,7 @@ def estimate_marker_pose_single(frame, marker, camera_matrix, distortion_coeff, 
         (255, 255, 255),
         3
     )
+    return distance
     
 def estimate_marker_pose_multiple(frame, marker_array, camera_matrix, distortion_coeff, marker_lenght = 0.1):
     all_text = ""

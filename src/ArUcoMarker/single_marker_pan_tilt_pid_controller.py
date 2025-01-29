@@ -95,7 +95,7 @@ tilt_servo_pin = 27
 tilt_servo = AngularServo(tilt_servo_pin, min_angle=BASE_MIN, max_angle=BASE_MAX)
 
 ## Define the PID Controllers for both the pan and tilt this needs to be adjusted as needed
-pan_controller  = PIDController(Kp=100 ,Ki =0 ,Kd =30)
+pan_controller  = PIDController(Kp=30 ,Ki =0 ,Kd =15)
 tilt_controller = PIDController(Kp =60 ,Ki =0 ,Kd =10 )
 
 msg_n = 25
@@ -184,6 +184,8 @@ def plot_data(position_data, time_data, angle_data, error_data, current_index):
         ang_data = np.array(angle_data)   # shape: (N, 2)
         err_data = np.array(error_data)   # shape: (N, 2)
 
+        print(ang_data)
+
         # 1) Distance
         line_dist.set_data(x_data, pos_data)
         axes[0].relim()
@@ -196,6 +198,7 @@ def plot_data(position_data, time_data, angle_data, error_data, current_index):
         axes[1].autoscale_view()
 
         # 3) Pan/Tilt Errors (in %)
+        
         pan_angle_line_err.set_data(x_data, np.abs(err_data[:, 0]) * 100)
         tilt_angle_line_err.set_data(x_data, np.abs(err_data[:, 1]) * 100)
         axes[2].relim()
@@ -276,11 +279,13 @@ def main(src=0):
                         )
 
                         x, y = center_aruco
-                        err_x = float(x - center[0]) / center[0]
+                        err_x = float(x - center[0])/ center[0]
                         err_y = float(y - center[1]) / center[1]
 
                         turn_x = pan_controller.compute(err_x, current_time)
                         turn_y = tilt_controller.compute(err_y, current_time)
+
+                        
 
                         cam_pan = -turn_x
                         cam_tilt = -turn_y
@@ -298,7 +303,7 @@ def main(src=0):
                         # 4) Append data for plotting (as lists)
                         TIME_DATA.append(current_time)
                         POSITION_DATA.append(total_dist)
-                        ANGLE_DATA.append([pan_servo.angle, pan_servo.angle])  # or (pan_servo.angle, tilt_servo.angle)
+                        ANGLE_DATA.append([pan_servo.angle, tilt_servo.angle])  # or (pan_servo.angle, tilt_servo.angle)
                         ERROR.append([err_x, err_y])
 
                         # 5) Keep only the last MAX_POINTS

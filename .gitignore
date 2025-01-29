@@ -11,3 +11,6 @@ __pycache__/
 images/
 /calibration_images/
 calibration_images/
+
+# Ignore the logs
+src/ArUcoMarker/logs/

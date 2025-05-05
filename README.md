@@ -77,6 +77,8 @@ Generic PID controller for motion and servo adjustments.
 ---
 
 ## Wiring Guide
+![image](https://github.com/user-attachments/assets/2eee6460-e1cd-4281-bdd4-0497255fffef)
+
 
 * **Pan servo** → GPIO17 (pin 11)
 * **Tilt servo** → GPIO13 (pin 13)

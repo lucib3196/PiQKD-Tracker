@@ -1,0 +1,21 @@
+2025-03-06 23:54:11,916 - INFO - Face tracking logging system initialized.
+2025-03-06 23:54:11,969 - INFO - Initialization successful.
+2025-03-06 23:54:11,970 - INFO - Camera now open.
+2025-03-06 23:54:11,974 - INFO - Camera configuration has been adjusted!
+2025-03-06 23:54:11,980 - INFO - Configuration successful!
+2025-03-06 23:54:12,052 - INFO - Camera started
+2025-03-06 23:54:12,065 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-06 23:54:12,066 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 23:54:12,266 - INFO - Stream stats - Frame: 0, Size: 174631 bytes, Clients: 0
+2025-03-06 23:54:23,675 - INFO - 172.20.10.2 - - [06/Mar/2025 23:54:23] "GET / HTTP/1.1" 200 -
+2025-03-06 23:54:23,982 - INFO - Client connected. Total clients: 1
+2025-03-06 23:54:24,066 - INFO - 172.20.10.2 - - [06/Mar/2025 23:54:24] "GET /video_feed HTTP/1.1" 200 -
+2025-03-06 23:54:34,051 - INFO - Stream stats - Frame: 300, Size: 213983 bytes, Clients: 1
+2025-03-06 23:54:44,111 - INFO - Stream stats - Frame: 600, Size: 212905 bytes, Clients: 1
+2025-03-06 23:54:54,172 - INFO - Stream stats - Frame: 900, Size: 209388 bytes, Clients: 1
+2025-03-06 23:55:04,218 - INFO - Stream stats - Frame: 1200, Size: 216226 bytes, Clients: 1
+2025-03-06 23:55:14,279 - INFO - Stream stats - Frame: 1500, Size: 216938 bytes, Clients: 1
+2025-03-06 23:55:15,028 - INFO - Camera stopped

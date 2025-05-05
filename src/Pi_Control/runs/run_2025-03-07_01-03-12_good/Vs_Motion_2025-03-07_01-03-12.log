@@ -1,0 +1,399 @@
+2025-03-07 01:03:12,291 - INFO - Logging system initialized.
+2025-03-07 01:03:12,292 - INFO - 
+Pan and Tilt Mechanism: 
+Current Date: 2025-03-07_01-03-12
+
+------------------------- Running Parameters -------------------------
+Pan Servo: Pin 17, PID Values: 
+ KP: 1
+ KI: 0.0
+ KD: 0.0, Angle Range -135-135, Current Angle -0.0
+Tilt Servo: Pin 27, PID Values: 
+ KP: 0.5
+ KI: 0.0
+ KD: 0.5, Angle Range -90-90, Current Angle -0.0
+
+Tracking Point: False
+--------------------------------------------------
+
+2025-03-07 01:03:12,320 - INFO - Initialization successful.
+2025-03-07 01:03:12,321 - INFO - Camera now open.
+2025-03-07 01:03:12,325 - INFO - Camera configuration has been adjusted!
+2025-03-07 01:03:12,327 - INFO - Configuration successful!
+2025-03-07 01:03:12,372 - INFO - Camera started
+2025-03-07 01:03:12,388 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-07 01:03:12,388 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-07 01:03:12,566 - INFO - Stream stats - Frame: 0, Size: 181422 bytes, Clients: 0
+2025-03-07 01:03:17,827 - INFO - 172.20.10.2 - - [07/Mar/2025 01:03:17] "GET / HTTP/1.1" 200 -
+2025-03-07 01:03:17,935 - INFO - Client connected. Total clients: 1
+2025-03-07 01:03:18,122 - INFO - 172.20.10.2 - - [07/Mar/2025 01:03:18] "GET /video_feed HTTP/1.1" 200 -
+2025-03-07 01:03:20,426 - INFO - Time: 1741309400.43s | Pan Error: 7.32, Tilt Error: -9.57
+2025-03-07 01:03:20,427 - INFO - Pan Angle: -7.56, Tilt Angle: -6.84
+2025-03-07 01:03:20,955 - INFO - Time: 1741309400.95s | Pan Error: -0.60, Tilt Error: -9.48
+2025-03-07 01:03:20,956 - INFO - Pan Angle: -7.02, Tilt Angle: -11.7
+2025-03-07 01:03:22,297 - INFO - Time: 1741309402.30s | Pan Error: -0.76, Tilt Error: -13.75
+2025-03-07 01:03:22,297 - INFO - Pan Angle: -6.48, Tilt Angle: -19.08
+2025-03-07 01:03:22,425 - INFO - Time: 1741309402.43s | Pan Error: -2.85, Tilt Error: -12.78
+2025-03-07 01:03:22,426 - INFO - Pan Angle: -3.78, Tilt Angle: -25.38
+2025-03-07 01:03:22,556 - INFO - Time: 1741309402.56s | Pan Error: -5.15, Tilt Error: -12.23
+2025-03-07 01:03:22,557 - INFO - Pan Angle: 1.35, Tilt Angle: -31.5
+2025-03-07 01:03:22,681 - INFO - Time: 1741309402.68s | Pan Error: -6.70, Tilt Error: -11.74
+2025-03-07 01:03:22,682 - INFO - Pan Angle: 7.83, Tilt Angle: -37.44
+2025-03-07 01:03:22,804 - INFO - Time: 1741309402.80s | Pan Error: -4.03, Tilt Error: -10.48
+2025-03-07 01:03:22,805 - INFO - Pan Angle: 11.61, Tilt Angle: -42.66
+2025-03-07 01:03:23,175 - INFO - Time: 1741309403.18s | Pan Error: 5.97, Tilt Error: -10.10
+2025-03-07 01:03:23,176 - INFO - Pan Angle: 5.4, Tilt Angle: -47.7
+2025-03-07 01:03:23,299 - INFO - Time: 1741309403.30s | Pan Error: 5.22, Tilt Error: -10.28
+2025-03-07 01:03:23,299 - INFO - Pan Angle: -0.0, Tilt Angle: -52.92
+2025-03-07 01:03:23,430 - INFO - Time: 1741309403.43s | Pan Error: 1.40, Tilt Error: -10.41
+2025-03-07 01:03:23,431 - INFO - Pan Angle: -1.62, Tilt Angle: -58.14
+2025-03-07 01:03:23,549 - INFO - Time: 1741309403.55s | Pan Error: -3.51, Tilt Error: -10.36
+2025-03-07 01:03:23,550 - INFO - Pan Angle: 1.62, Tilt Angle: -63.36
+2025-03-07 01:03:23,670 - INFO - Time: 1741309403.67s | Pan Error: -5.92, Tilt Error: -10.25
+2025-03-07 01:03:23,670 - INFO - Pan Angle: 7.29, Tilt Angle: -68.58
+2025-03-07 01:03:23,798 - INFO - Time: 1741309403.80s | Pan Error: -6.73, Tilt Error: -10.27
+2025-03-07 01:03:23,800 - INFO - Pan Angle: 13.77, Tilt Angle: -73.8
+2025-03-07 01:03:23,926 - INFO - Time: 1741309403.93s | Pan Error: -2.70, Tilt Error: -10.30
+2025-03-07 01:03:23,927 - INFO - Pan Angle: 16.47, Tilt Angle: -79.02
+2025-03-07 01:03:24,171 - INFO - Time: 1741309404.17s | Pan Error: 7.14, Tilt Error: -10.61
+2025-03-07 01:03:24,172 - INFO - Pan Angle: 9.18, Tilt Angle: -84.42
+2025-03-07 01:03:24,295 - INFO - Time: 1741309404.30s | Pan Error: 9.05, Tilt Error: -10.51
+2025-03-07 01:03:24,296 - INFO - Pan Angle: -0.0, Tilt Angle: -89.82
+2025-03-07 01:03:24,662 - INFO - Time: 1741309404.66s | Pan Error: -4.79, Tilt Error: -10.42
+2025-03-07 01:03:24,663 - INFO - Pan Angle: 4.59, Tilt Angle: -90.0
+2025-03-07 01:03:24,786 - INFO - Time: 1741309404.79s | Pan Error: -5.19, Tilt Error: -10.34
+2025-03-07 01:03:24,787 - INFO - Pan Angle: 9.72, Tilt Angle: -90.0
+2025-03-07 01:03:24,907 - INFO - Time: 1741309404.91s | Pan Error: -4.34, Tilt Error: -10.37
+2025-03-07 01:03:24,908 - INFO - Pan Angle: 14.04, Tilt Angle: -90.0
+2025-03-07 01:03:25,269 - INFO - Time: 1741309405.27s | Pan Error: 6.33, Tilt Error: -10.56
+2025-03-07 01:03:25,270 - INFO - Pan Angle: 7.56, Tilt Angle: -90.0
+2025-03-07 01:03:25,406 - INFO - Time: 1741309405.41s | Pan Error: 6.71, Tilt Error: -10.47
+2025-03-07 01:03:25,407 - INFO - Pan Angle: 0.81, Tilt Angle: -90.0
+2025-03-07 01:03:25,528 - INFO - Time: 1741309405.53s | Pan Error: 3.32, Tilt Error: -10.44
+2025-03-07 01:03:25,529 - INFO - Pan Angle: -2.7, Tilt Angle: -90.0
+2025-03-07 01:03:25,767 - INFO - Time: 1741309405.77s | Pan Error: -5.74, Tilt Error: -10.32
+2025-03-07 01:03:25,768 - INFO - Pan Angle: 2.97, Tilt Angle: -90.0
+2025-03-07 01:03:25,891 - INFO - Time: 1741309405.89s | Pan Error: -7.45, Tilt Error: -10.33
+2025-03-07 01:03:25,892 - INFO - Pan Angle: 10.26, Tilt Angle: -90.0
+2025-03-07 01:03:26,011 - INFO - Time: 1741309406.01s | Pan Error: -5.95, Tilt Error: -10.33
+2025-03-07 01:03:26,012 - INFO - Pan Angle: 16.2, Tilt Angle: -90.0
+2025-03-07 01:03:26,364 - INFO - Time: 1741309406.36s | Pan Error: 8.99, Tilt Error: -10.41
+2025-03-07 01:03:26,365 - INFO - Pan Angle: 7.02, Tilt Angle: -90.0
+2025-03-07 01:03:26,503 - INFO - Time: 1741309406.50s | Pan Error: 9.46, Tilt Error: -10.27
+2025-03-07 01:03:26,505 - INFO - Pan Angle: -2.7, Tilt Angle: -90.0
+2025-03-07 01:03:26,851 - INFO - Time: 1741309406.85s | Pan Error: -6.55, Tilt Error: -10.13
+2025-03-07 01:03:26,851 - INFO - Pan Angle: 3.78, Tilt Angle: -90.0
+2025-03-07 01:03:26,977 - INFO - Time: 1741309406.98s | Pan Error: -7.35, Tilt Error: -10.11
+2025-03-07 01:03:26,977 - INFO - Pan Angle: 11.07, Tilt Angle: -90.0
+2025-03-07 01:03:27,102 - INFO - Time: 1741309407.10s | Pan Error: -5.04, Tilt Error: -9.93
+2025-03-07 01:03:27,102 - INFO - Pan Angle: 15.93, Tilt Angle: -90.0
+2025-03-07 01:03:27,363 - INFO - Time: 1741309407.36s | Pan Error: 6.88, Tilt Error: -9.95
+2025-03-07 01:03:27,363 - INFO - Pan Angle: 8.91, Tilt Angle: -90.0
+2025-03-07 01:03:27,485 - INFO - Time: 1741309407.49s | Pan Error: 9.01, Tilt Error: -10.08
+2025-03-07 01:03:27,486 - INFO - Pan Angle: -0.27, Tilt Angle: -90.0
+2025-03-07 01:03:27,840 - INFO - Time: 1741309407.84s | Pan Error: -4.43, Tilt Error: -9.94
+2025-03-07 01:03:27,841 - INFO - Pan Angle: 4.05, Tilt Angle: -90.0
+2025-03-07 01:03:27,908 - INFO - Stream stats - Frame: 300, Size: 196897 bytes, Clients: 1
+2025-03-07 01:03:28,005 - INFO - Time: 1741309408.01s | Pan Error: -4.96, Tilt Error: -9.91
+2025-03-07 01:03:28,007 - INFO - Pan Angle: 8.91, Tilt Angle: -90.0
+2025-03-07 01:03:28,139 - INFO - Time: 1741309408.14s | Pan Error: -3.04, Tilt Error: -9.99
+2025-03-07 01:03:28,140 - INFO - Pan Angle: 11.88, Tilt Angle: -90.0
+2025-03-07 01:03:28,268 - INFO - Time: 1741309408.27s | Pan Error: 0.80, Tilt Error: -10.01
+2025-03-07 01:03:28,269 - INFO - Pan Angle: 11.07, Tilt Angle: -90.0
+2025-03-07 01:03:28,405 - INFO - Time: 1741309408.41s | Pan Error: 4.18, Tilt Error: -9.95
+2025-03-07 01:03:28,406 - INFO - Pan Angle: 6.75, Tilt Angle: -90.0
+2025-03-07 01:03:28,530 - INFO - Time: 1741309408.53s | Pan Error: 4.85, Tilt Error: -9.95
+2025-03-07 01:03:28,531 - INFO - Pan Angle: 1.89, Tilt Angle: -90.0
+2025-03-07 01:03:28,655 - INFO - Time: 1741309408.66s | Pan Error: 3.09, Tilt Error: -9.97
+2025-03-07 01:03:28,656 - INFO - Pan Angle: -1.35, Tilt Angle: -90.0
+2025-03-07 01:03:28,898 - INFO - Time: 1741309408.90s | Pan Error: -4.40, Tilt Error: -9.88
+2025-03-07 01:03:28,899 - INFO - Pan Angle: 2.97, Tilt Angle: -90.0
+2025-03-07 01:03:29,028 - INFO - Time: 1741309409.03s | Pan Error: -5.39, Tilt Error: -9.84
+2025-03-07 01:03:29,029 - INFO - Pan Angle: 8.1, Tilt Angle: -90.0
+2025-03-07 01:03:29,152 - INFO - Time: 1741309409.15s | Pan Error: -4.29, Tilt Error: -9.87
+2025-03-07 01:03:29,153 - INFO - Pan Angle: 12.15, Tilt Angle: -90.0
+2025-03-07 01:03:29,406 - INFO - Time: 1741309409.41s | Pan Error: 4.09, Tilt Error: -9.92
+2025-03-07 01:03:29,407 - INFO - Pan Angle: 7.83, Tilt Angle: -90.0
+2025-03-07 01:03:29,570 - INFO - Time: 1741309409.57s | Pan Error: 6.00, Tilt Error: -10.00
+2025-03-07 01:03:29,572 - INFO - Pan Angle: 1.62, Tilt Angle: -90.0
+2025-03-07 01:03:29,693 - INFO - Time: 1741309409.69s | Pan Error: 3.50, Tilt Error: -9.97
+2025-03-07 01:03:29,694 - INFO - Pan Angle: -1.89, Tilt Angle: -90.0
+2025-03-07 01:03:29,932 - INFO - Time: 1741309409.93s | Pan Error: -4.32, Tilt Error: -9.84
+2025-03-07 01:03:29,932 - INFO - Pan Angle: 2.16, Tilt Angle: -90.0
+2025-03-07 01:03:30,058 - INFO - Time: 1741309410.06s | Pan Error: -5.88, Tilt Error: -9.87
+2025-03-07 01:03:30,059 - INFO - Pan Angle: 7.83, Tilt Angle: -90.0
+2025-03-07 01:03:30,178 - INFO - Time: 1741309410.18s | Pan Error: -4.90, Tilt Error: -9.89
+2025-03-07 01:03:30,179 - INFO - Pan Angle: 12.69, Tilt Angle: -90.0
+2025-03-07 01:03:30,332 - INFO - Time: 1741309410.33s | Pan Error: -0.56, Tilt Error: -9.85
+2025-03-07 01:03:30,334 - INFO - Pan Angle: 13.23, Tilt Angle: -90.0
+2025-03-07 01:03:30,535 - INFO - Time: 1741309410.53s | Pan Error: 5.27, Tilt Error: -10.03
+2025-03-07 01:03:30,536 - INFO - Pan Angle: 7.83, Tilt Angle: -90.0
+2025-03-07 01:03:30,671 - INFO - Time: 1741309410.67s | Pan Error: 7.49, Tilt Error: -10.01
+2025-03-07 01:03:30,673 - INFO - Pan Angle: 0.27, Tilt Angle: -90.0
+2025-03-07 01:03:30,812 - INFO - Time: 1741309410.81s | Pan Error: 4.47, Tilt Error: -9.97
+2025-03-07 01:03:30,813 - INFO - Pan Angle: -4.32, Tilt Angle: -90.0
+2025-03-07 01:03:31,081 - INFO - Time: 1741309411.08s | Pan Error: -6.26, Tilt Error: -9.85
+2025-03-07 01:03:31,083 - INFO - Pan Angle: 1.89, Tilt Angle: -90.0
+2025-03-07 01:03:31,278 - INFO - Time: 1741309411.28s | Pan Error: -7.88, Tilt Error: -9.80
+2025-03-07 01:03:31,279 - INFO - Pan Angle: 9.72, Tilt Angle: -90.0
+2025-03-07 01:03:31,414 - INFO - Time: 1741309411.41s | Pan Error: -4.81, Tilt Error: -9.88
+2025-03-07 01:03:31,415 - INFO - Pan Angle: 14.31, Tilt Angle: -90.0
+2025-03-07 01:03:31,679 - INFO - Time: 1741309411.68s | Pan Error: 6.52, Tilt Error: -9.92
+2025-03-07 01:03:31,680 - INFO - Pan Angle: 7.56, Tilt Angle: -90.0
+2025-03-07 01:03:31,805 - INFO - Time: 1741309411.81s | Pan Error: 9.11, Tilt Error: -9.96
+2025-03-07 01:03:31,807 - INFO - Pan Angle: -1.62, Tilt Angle: -90.0
+2025-03-07 01:03:31,930 - INFO - Time: 1741309411.93s | Pan Error: 5.42, Tilt Error: -9.99
+2025-03-07 01:03:31,931 - INFO - Pan Angle: -7.29, Tilt Angle: -90.0
+2025-03-07 01:03:32,294 - INFO - Time: 1741309412.29s | Pan Error: -10.22, Tilt Error: -9.87
+2025-03-07 01:03:32,295 - INFO - Pan Angle: 2.7, Tilt Angle: -90.0
+2025-03-07 01:03:32,415 - INFO - Time: 1741309412.42s | Pan Error: -10.23, Tilt Error: -9.88
+2025-03-07 01:03:32,416 - INFO - Pan Angle: 12.69, Tilt Angle: -90.0
+2025-03-07 01:03:32,774 - INFO - Time: 1741309412.77s | Pan Error: 5.91, Tilt Error: -9.80
+2025-03-07 01:03:32,775 - INFO - Pan Angle: 6.75, Tilt Angle: -90.0
+2025-03-07 01:03:32,897 - INFO - Time: 1741309412.90s | Pan Error: 7.16, Tilt Error: -9.87
+2025-03-07 01:03:32,898 - INFO - Pan Angle: -0.54, Tilt Angle: -90.0
+2025-03-07 01:03:33,034 - INFO - Time: 1741309413.03s | Pan Error: 4.34, Tilt Error: -9.91
+2025-03-07 01:03:33,036 - INFO - Pan Angle: -5.13, Tilt Angle: -90.0
+2025-03-07 01:03:33,162 - INFO - Time: 1741309413.16s | Pan Error: -2.12, Tilt Error: -9.82
+2025-03-07 01:03:33,163 - INFO - Pan Angle: -3.24, Tilt Angle: -90.0
+2025-03-07 01:03:33,291 - INFO - Time: 1741309413.29s | Pan Error: -6.72, Tilt Error: -9.81
+2025-03-07 01:03:33,292 - INFO - Pan Angle: 3.24, Tilt Angle: -90.0
+2025-03-07 01:03:33,421 - INFO - Time: 1741309413.42s | Pan Error: -7.40, Tilt Error: -9.74
+2025-03-07 01:03:33,421 - INFO - Pan Angle: 10.53, Tilt Angle: -90.0
+2025-03-07 01:03:33,774 - INFO - Time: 1741309413.77s | Pan Error: 4.39, Tilt Error: -9.85
+2025-03-07 01:03:33,775 - INFO - Pan Angle: 5.94, Tilt Angle: -90.0
+2025-03-07 01:03:33,899 - INFO - Time: 1741309413.90s | Pan Error: 5.41, Tilt Error: -9.77
+2025-03-07 01:03:33,900 - INFO - Pan Angle: 0.27, Tilt Angle: -90.0
+2025-03-07 01:03:34,022 - INFO - Time: 1741309414.02s | Pan Error: 3.04, Tilt Error: -9.77
+2025-03-07 01:03:34,023 - INFO - Pan Angle: -2.97, Tilt Angle: -90.0
+2025-03-07 01:03:34,265 - INFO - Time: 1741309414.27s | Pan Error: -4.78, Tilt Error: -9.78
+2025-03-07 01:03:34,266 - INFO - Pan Angle: 1.62, Tilt Angle: -90.0
+2025-03-07 01:03:34,407 - INFO - Time: 1741309414.41s | Pan Error: -6.21, Tilt Error: -9.76
+2025-03-07 01:03:34,408 - INFO - Pan Angle: 7.56, Tilt Angle: -90.0
+2025-03-07 01:03:34,532 - INFO - Time: 1741309414.53s | Pan Error: -4.64, Tilt Error: -9.72
+2025-03-07 01:03:34,533 - INFO - Pan Angle: 12.15, Tilt Angle: -90.0
+2025-03-07 01:03:34,891 - INFO - Time: 1741309414.89s | Pan Error: 6.76, Tilt Error: -9.78
+2025-03-07 01:03:34,891 - INFO - Pan Angle: 5.13, Tilt Angle: -90.0
+2025-03-07 01:03:35,023 - INFO - Time: 1741309415.02s | Pan Error: 7.28, Tilt Error: -9.84
+2025-03-07 01:03:35,024 - INFO - Pan Angle: -2.16, Tilt Angle: -90.0
+2025-03-07 01:03:35,384 - INFO - Time: 1741309415.38s | Pan Error: -5.18, Tilt Error: -9.84
+2025-03-07 01:03:35,384 - INFO - Pan Angle: 2.97, Tilt Angle: -90.0
+2025-03-07 01:03:35,517 - INFO - Time: 1741309415.52s | Pan Error: -5.46, Tilt Error: -9.76
+2025-03-07 01:03:35,518 - INFO - Pan Angle: 8.37, Tilt Angle: -90.0
+2025-03-07 01:03:35,653 - INFO - Time: 1741309415.65s | Pan Error: -3.67, Tilt Error: -9.72
+2025-03-07 01:03:35,654 - INFO - Pan Angle: 11.88, Tilt Angle: -90.0
+2025-03-07 01:03:35,894 - INFO - Time: 1741309415.89s | Pan Error: 5.06, Tilt Error: -9.76
+2025-03-07 01:03:35,895 - INFO - Pan Angle: 6.75, Tilt Angle: -90.0
+2025-03-07 01:03:36,018 - INFO - Time: 1741309416.02s | Pan Error: 6.57, Tilt Error: -9.78
+2025-03-07 01:03:36,019 - INFO - Pan Angle: -0.0, Tilt Angle: -90.0
+2025-03-07 01:03:36,140 - INFO - Time: 1741309416.14s | Pan Error: 5.00, Tilt Error: -9.69
+2025-03-07 01:03:36,141 - INFO - Pan Angle: -5.13, Tilt Angle: -90.0
+2025-03-07 01:03:36,502 - INFO - Time: 1741309416.50s | Pan Error: -7.50, Tilt Error: -9.54
+2025-03-07 01:03:36,503 - INFO - Pan Angle: 2.16, Tilt Angle: -90.0
+2025-03-07 01:03:36,626 - INFO - Time: 1741309416.63s | Pan Error: -7.93, Tilt Error: -9.55
+2025-03-07 01:03:36,627 - INFO - Pan Angle: 9.99, Tilt Angle: -90.0
+2025-03-07 01:03:36,976 - INFO - Time: 1741309416.98s | Pan Error: 3.76, Tilt Error: -9.51
+2025-03-07 01:03:36,977 - INFO - Pan Angle: 6.21, Tilt Angle: -90.0
+2025-03-07 01:03:37,110 - INFO - Time: 1741309417.11s | Pan Error: 4.92, Tilt Error: -9.62
+2025-03-07 01:03:37,113 - INFO - Pan Angle: 1.08, Tilt Angle: -90.0
+2025-03-07 01:03:37,234 - INFO - Time: 1741309417.23s | Pan Error: 3.41, Tilt Error: -9.61
+2025-03-07 01:03:37,236 - INFO - Pan Angle: -2.43, Tilt Angle: -90.0
+2025-03-07 01:03:37,361 - INFO - Time: 1741309417.36s | Pan Error: -0.57, Tilt Error: -9.58
+2025-03-07 01:03:37,362 - INFO - Pan Angle: -1.89, Tilt Angle: -90.0
+2025-03-07 01:03:37,485 - INFO - Time: 1741309417.49s | Pan Error: -4.24, Tilt Error: -9.51
+2025-03-07 01:03:37,486 - INFO - Pan Angle: 2.16, Tilt Angle: -90.0
+2025-03-07 01:03:37,610 - INFO - Time: 1741309417.61s | Pan Error: -4.74, Tilt Error: -9.52
+2025-03-07 01:03:37,612 - INFO - Pan Angle: 6.75, Tilt Angle: -90.0
+2025-03-07 01:03:37,733 - INFO - Time: 1741309417.73s | Pan Error: -3.74, Tilt Error: -9.61
+2025-03-07 01:03:37,734 - INFO - Pan Angle: 10.26, Tilt Angle: -90.0
+2025-03-07 01:03:37,872 - INFO - Time: 1741309417.87s | Pan Error: 0.05, Tilt Error: -9.61
+2025-03-07 01:03:37,873 - INFO - Pan Angle: 9.99, Tilt Angle: -90.0
+2025-03-07 01:03:37,892 - INFO - Stream stats - Frame: 600, Size: 189869 bytes, Clients: 1
+2025-03-07 01:03:37,994 - INFO - Time: 1741309417.99s | Pan Error: 4.28, Tilt Error: -9.68
+2025-03-07 01:03:37,995 - INFO - Pan Angle: 5.67, Tilt Angle: -90.0
+2025-03-07 01:03:38,138 - INFO - Time: 1741309418.14s | Pan Error: 5.05, Tilt Error: -9.74
+2025-03-07 01:03:38,139 - INFO - Pan Angle: 0.54, Tilt Angle: -90.0
+2025-03-07 01:03:38,263 - INFO - Time: 1741309418.26s | Pan Error: 2.91, Tilt Error: -9.74
+2025-03-07 01:03:38,264 - INFO - Pan Angle: -2.43, Tilt Angle: -90.0
+2025-03-07 01:03:38,409 - INFO - Time: 1741309418.41s | Pan Error: -1.39, Tilt Error: -9.76
+2025-03-07 01:03:38,410 - INFO - Pan Angle: -1.08, Tilt Angle: -90.0
+2025-03-07 01:03:38,534 - INFO - Time: 1741309418.53s | Pan Error: -4.33, Tilt Error: -9.68
+2025-03-07 01:03:38,535 - INFO - Pan Angle: 3.24, Tilt Angle: -90.0
+2025-03-07 01:03:38,658 - INFO - Time: 1741309418.66s | Pan Error: -4.93, Tilt Error: -9.64
+2025-03-07 01:03:38,659 - INFO - Pan Angle: 8.1, Tilt Angle: -90.0
+2025-03-07 01:03:38,793 - INFO - Time: 1741309418.79s | Pan Error: -3.58, Tilt Error: -9.79
+2025-03-07 01:03:38,794 - INFO - Pan Angle: 11.61, Tilt Angle: -90.0
+2025-03-07 01:03:38,936 - INFO - Time: 1741309418.94s | Pan Error: 2.05, Tilt Error: -9.77
+2025-03-07 01:03:38,937 - INFO - Pan Angle: 9.45, Tilt Angle: -90.0
+2025-03-07 01:03:39,068 - INFO - Time: 1741309419.07s | Pan Error: 6.02, Tilt Error: -9.75
+2025-03-07 01:03:39,069 - INFO - Pan Angle: 3.24, Tilt Angle: -90.0
+2025-03-07 01:03:39,202 - INFO - Time: 1741309419.20s | Pan Error: 6.69, Tilt Error: -9.77
+2025-03-07 01:03:39,202 - INFO - Pan Angle: -3.51, Tilt Angle: -90.0
+2025-03-07 01:03:39,565 - INFO - Time: 1741309419.57s | Pan Error: -5.81, Tilt Error: -9.72
+2025-03-07 01:03:39,566 - INFO - Pan Angle: 2.16, Tilt Angle: -90.0
+2025-03-07 01:03:39,787 - INFO - Time: 1741309419.79s | Pan Error: -6.37, Tilt Error: -9.72
+2025-03-07 01:03:39,788 - INFO - Pan Angle: 8.37, Tilt Angle: -90.0
+2025-03-07 01:03:39,932 - INFO - Time: 1741309419.93s | Pan Error: -2.90, Tilt Error: -9.67
+2025-03-07 01:03:39,933 - INFO - Pan Angle: 11.07, Tilt Angle: -90.0
+2025-03-07 01:03:40,059 - INFO - Time: 1741309420.06s | Pan Error: 1.71, Tilt Error: -9.73
+2025-03-07 01:03:40,060 - INFO - Pan Angle: 9.18, Tilt Angle: -90.0
+2025-03-07 01:03:40,193 - INFO - Time: 1741309420.19s | Pan Error: 5.23, Tilt Error: -9.76
+2025-03-07 01:03:40,194 - INFO - Pan Angle: 3.78, Tilt Angle: -90.0
+2025-03-07 01:03:40,337 - INFO - Time: 1741309420.34s | Pan Error: 5.92, Tilt Error: -9.80
+2025-03-07 01:03:40,338 - INFO - Pan Angle: -2.16, Tilt Angle: -90.0
+2025-03-07 01:03:40,466 - INFO - Time: 1741309420.47s | Pan Error: 2.01, Tilt Error: -9.85
+2025-03-07 01:03:40,467 - INFO - Pan Angle: -4.32, Tilt Angle: -90.0
+2025-03-07 01:03:40,588 - INFO - Time: 1741309420.59s | Pan Error: -3.36, Tilt Error: -9.73
+2025-03-07 01:03:40,588 - INFO - Pan Angle: -1.08, Tilt Angle: -90.0
+2025-03-07 01:03:40,708 - INFO - Time: 1741309420.71s | Pan Error: -5.39, Tilt Error: -9.73
+2025-03-07 01:03:40,709 - INFO - Pan Angle: 4.05, Tilt Angle: -90.0
+2025-03-07 01:03:40,841 - INFO - Time: 1741309420.84s | Pan Error: -6.31, Tilt Error: -9.69
+2025-03-07 01:03:40,842 - INFO - Pan Angle: 10.26, Tilt Angle: -90.0
+2025-03-07 01:03:40,974 - INFO - Time: 1741309420.97s | Pan Error: -2.63, Tilt Error: -9.64
+2025-03-07 01:03:40,975 - INFO - Pan Angle: 12.69, Tilt Angle: -90.0
+2025-03-07 01:03:41,224 - INFO - Time: 1741309421.22s | Pan Error: 6.78, Tilt Error: -9.74
+2025-03-07 01:03:41,225 - INFO - Pan Angle: 5.67, Tilt Angle: -90.0
+2025-03-07 01:03:41,350 - INFO - Time: 1741309421.35s | Pan Error: 7.88, Tilt Error: -9.69
+2025-03-07 01:03:41,351 - INFO - Pan Angle: -2.43, Tilt Angle: -90.0
+2025-03-07 01:03:41,714 - INFO - Time: 1741309421.71s | Pan Error: -4.36, Tilt Error: -9.59
+2025-03-07 01:03:41,715 - INFO - Pan Angle: 1.89, Tilt Angle: -90.0
+2025-03-07 01:03:41,845 - INFO - Time: 1741309421.85s | Pan Error: -4.96, Tilt Error: -9.51
+2025-03-07 01:03:41,847 - INFO - Pan Angle: 6.75, Tilt Angle: -90.0
+2025-03-07 01:03:41,995 - INFO - Time: 1741309421.99s | Pan Error: -3.75, Tilt Error: -9.55
+2025-03-07 01:03:41,995 - INFO - Pan Angle: 10.26, Tilt Angle: -90.0
+2025-03-07 01:03:42,180 - INFO - Time: 1741309422.18s | Pan Error: 0.65, Tilt Error: -9.55
+2025-03-07 01:03:42,180 - INFO - Pan Angle: 9.45, Tilt Angle: -90.0
+2025-03-07 01:03:42,322 - INFO - Time: 1741309422.32s | Pan Error: 5.48, Tilt Error: -9.44
+2025-03-07 01:03:42,324 - INFO - Pan Angle: 3.78, Tilt Angle: -90.0
+2025-03-07 01:03:42,464 - INFO - Time: 1741309422.46s | Pan Error: 6.10, Tilt Error: -9.47
+2025-03-07 01:03:42,467 - INFO - Pan Angle: -2.43, Tilt Angle: -90.0
+2025-03-07 01:03:42,609 - INFO - Time: 1741309422.61s | Pan Error: 1.94, Tilt Error: -9.38
+2025-03-07 01:03:42,611 - INFO - Pan Angle: -4.59, Tilt Angle: -90.0
+2025-03-07 01:03:42,754 - INFO - Time: 1741309422.75s | Pan Error: -3.09, Tilt Error: -9.48
+2025-03-07 01:03:42,756 - INFO - Pan Angle: -1.62, Tilt Angle: -90.0
+2025-03-07 01:03:42,889 - INFO - Time: 1741309422.89s | Pan Error: -5.91, Tilt Error: -9.48
+2025-03-07 01:03:42,892 - INFO - Pan Angle: 4.05, Tilt Angle: -90.0
+2025-03-07 01:03:43,033 - INFO - Time: 1741309423.03s | Pan Error: -6.61, Tilt Error: -9.45
+2025-03-07 01:03:43,034 - INFO - Pan Angle: 10.53, Tilt Angle: -90.0
+2025-03-07 01:03:43,166 - INFO - Time: 1741309423.17s | Pan Error: -2.17, Tilt Error: -9.44
+2025-03-07 01:03:43,167 - INFO - Pan Angle: 12.69, Tilt Angle: -90.0
+2025-03-07 01:03:43,417 - INFO - Time: 1741309423.42s | Pan Error: 6.99, Tilt Error: -9.56
+2025-03-07 01:03:43,418 - INFO - Pan Angle: 5.67, Tilt Angle: -90.0
+2025-03-07 01:03:43,546 - INFO - Time: 1741309423.55s | Pan Error: 8.08, Tilt Error: -9.54
+2025-03-07 01:03:43,548 - INFO - Pan Angle: -2.43, Tilt Angle: -90.0
+2025-03-07 01:03:43,906 - INFO - Time: 1741309423.91s | Pan Error: -4.26, Tilt Error: -9.63
+2025-03-07 01:03:43,907 - INFO - Pan Angle: 1.62, Tilt Angle: -90.0
+2025-03-07 01:03:44,040 - INFO - Time: 1741309424.04s | Pan Error: -4.78, Tilt Error: -9.66
+2025-03-07 01:03:44,040 - INFO - Pan Angle: 6.21, Tilt Angle: -90.0
+2025-03-07 01:03:44,160 - INFO - Time: 1741309424.16s | Pan Error: -3.65, Tilt Error: -9.67
+2025-03-07 01:03:44,161 - INFO - Pan Angle: 9.72, Tilt Angle: -90.0
+2025-03-07 01:03:44,292 - INFO - Time: 1741309424.29s | Pan Error: 0.04, Tilt Error: -9.69
+2025-03-07 01:03:44,292 - INFO - Pan Angle: 9.45, Tilt Angle: -90.0
+2025-03-07 01:03:44,418 - INFO - Time: 1741309424.42s | Pan Error: 4.23, Tilt Error: -9.73
+2025-03-07 01:03:44,418 - INFO - Pan Angle: 5.13, Tilt Angle: -90.0
+2025-03-07 01:03:44,547 - INFO - Time: 1741309424.55s | Pan Error: 5.24, Tilt Error: -9.68
+2025-03-07 01:03:44,548 - INFO - Pan Angle: -0.27, Tilt Angle: -90.0
+2025-03-07 01:03:44,668 - INFO - Time: 1741309424.67s | Pan Error: 3.37, Tilt Error: -9.67
+2025-03-07 01:03:44,669 - INFO - Pan Angle: -3.78, Tilt Angle: -90.0
+2025-03-07 01:03:44,793 - INFO - Time: 1741309424.79s | Pan Error: -1.20, Tilt Error: -9.65
+2025-03-07 01:03:44,793 - INFO - Pan Angle: -2.7, Tilt Angle: -90.0
+2025-03-07 01:03:44,919 - INFO - Time: 1741309424.92s | Pan Error: -4.56, Tilt Error: -9.67
+2025-03-07 01:03:44,919 - INFO - Pan Angle: 1.62, Tilt Angle: -90.0
+2025-03-07 01:03:45,048 - INFO - Time: 1741309425.05s | Pan Error: -5.38, Tilt Error: -9.56
+2025-03-07 01:03:45,048 - INFO - Pan Angle: 6.75, Tilt Angle: -90.0
+2025-03-07 01:03:45,169 - INFO - Time: 1741309425.17s | Pan Error: -3.81, Tilt Error: -9.57
+2025-03-07 01:03:45,170 - INFO - Pan Angle: 10.53, Tilt Angle: -90.0
+2025-03-07 01:03:45,416 - INFO - Time: 1741309425.42s | Pan Error: 4.45, Tilt Error: -9.61
+2025-03-07 01:03:45,417 - INFO - Pan Angle: 5.94, Tilt Angle: -90.0
+2025-03-07 01:03:45,535 - INFO - Time: 1741309425.54s | Pan Error: 6.17, Tilt Error: -9.65
+2025-03-07 01:03:45,536 - INFO - Pan Angle: -0.27, Tilt Angle: -90.0
+2025-03-07 01:03:45,658 - INFO - Time: 1741309425.66s | Pan Error: 4.29, Tilt Error: -9.61
+2025-03-07 01:03:45,658 - INFO - Pan Angle: -4.59, Tilt Angle: -90.0
+2025-03-07 01:03:45,791 - INFO - Time: 1741309425.79s | Pan Error: -0.96, Tilt Error: -9.66
+2025-03-07 01:03:45,792 - INFO - Pan Angle: -3.78, Tilt Angle: -90.0
+2025-03-07 01:03:45,931 - INFO - Time: 1741309425.93s | Pan Error: -5.08, Tilt Error: -9.60
+2025-03-07 01:03:45,932 - INFO - Pan Angle: 1.08, Tilt Angle: -90.0
+2025-03-07 01:03:46,057 - INFO - Time: 1741309426.06s | Pan Error: -5.80, Tilt Error: -9.55
+2025-03-07 01:03:46,057 - INFO - Pan Angle: 6.75, Tilt Angle: -90.0
+2025-03-07 01:03:46,180 - INFO - Time: 1741309426.18s | Pan Error: -4.04, Tilt Error: -9.49
+2025-03-07 01:03:46,181 - INFO - Pan Angle: 10.53, Tilt Angle: -90.0
+2025-03-07 01:03:46,417 - INFO - Time: 1741309426.42s | Pan Error: 4.49, Tilt Error: -9.70
+2025-03-07 01:03:46,418 - INFO - Pan Angle: 5.94, Tilt Angle: -90.0
+2025-03-07 01:03:46,539 - INFO - Time: 1741309426.54s | Pan Error: 6.31, Tilt Error: -9.80
+2025-03-07 01:03:46,540 - INFO - Pan Angle: -0.54, Tilt Angle: -90.0
+2025-03-07 01:03:46,693 - INFO - Time: 1741309426.69s | Pan Error: 4.36, Tilt Error: -9.86
+2025-03-07 01:03:46,694 - INFO - Pan Angle: -5.13, Tilt Angle: -90.0
+2025-03-07 01:03:46,821 - INFO - Time: 1741309426.82s | Pan Error: -1.65, Tilt Error: -9.72
+2025-03-07 01:03:46,822 - INFO - Pan Angle: -3.51, Tilt Angle: -90.0
+2025-03-07 01:03:46,945 - INFO - Time: 1741309426.95s | Pan Error: -4.67, Tilt Error: -9.79
+2025-03-07 01:03:46,946 - INFO - Pan Angle: 1.08, Tilt Angle: -90.0
+2025-03-07 01:03:47,072 - INFO - Time: 1741309427.07s | Pan Error: -6.00, Tilt Error: -9.84
+2025-03-07 01:03:47,074 - INFO - Pan Angle: 7.02, Tilt Angle: -90.0
+2025-03-07 01:03:47,194 - INFO - Time: 1741309427.19s | Pan Error: -4.54, Tilt Error: -9.89
+2025-03-07 01:03:47,195 - INFO - Pan Angle: 11.34, Tilt Angle: -90.0
+2025-03-07 01:03:47,567 - INFO - Time: 1741309427.57s | Pan Error: 7.05, Tilt Error: -9.89
+2025-03-07 01:03:47,568 - INFO - Pan Angle: 4.05, Tilt Angle: -90.0
+2025-03-07 01:03:47,704 - INFO - Time: 1741309427.70s | Pan Error: 7.15, Tilt Error: -9.89
+2025-03-07 01:03:47,705 - INFO - Pan Angle: -3.24, Tilt Angle: -90.0
+2025-03-07 01:03:47,825 - INFO - Time: 1741309427.83s | Pan Error: 3.80, Tilt Error: -9.89
+2025-03-07 01:03:47,826 - INFO - Pan Angle: -7.29, Tilt Angle: -90.0
+2025-03-07 01:03:47,893 - INFO - Stream stats - Frame: 900, Size: 185367 bytes, Clients: 1
+2025-03-07 01:03:48,191 - INFO - Time: 1741309428.19s | Pan Error: -8.69, Tilt Error: -9.76
+2025-03-07 01:03:48,192 - INFO - Pan Angle: 1.35, Tilt Angle: -90.0
+2025-03-07 01:03:48,347 - INFO - Time: 1741309428.35s | Pan Error: -8.69, Tilt Error: -9.79
+2025-03-07 01:03:48,348 - INFO - Pan Angle: 9.99, Tilt Angle: -90.0
+2025-03-07 01:03:48,472 - INFO - Time: 1741309428.47s | Pan Error: -4.53, Tilt Error: -9.77
+2025-03-07 01:03:48,473 - INFO - Pan Angle: 14.31, Tilt Angle: -90.0
+2025-03-07 01:03:48,834 - INFO - Time: 1741309428.83s | Pan Error: 10.15, Tilt Error: -9.94
+2025-03-07 01:03:48,834 - INFO - Pan Angle: 4.05, Tilt Angle: -90.0
+2025-03-07 01:03:48,956 - INFO - Time: 1741309428.96s | Pan Error: 10.64, Tilt Error: -9.85
+2025-03-07 01:03:48,957 - INFO - Pan Angle: -6.75, Tilt Angle: -90.0
+2025-03-07 01:03:49,328 - INFO - Time: 1741309429.33s | Pan Error: -7.42, Tilt Error: -9.71
+2025-03-07 01:03:49,329 - INFO - Pan Angle: 0.54, Tilt Angle: -90.0
+2025-03-07 01:03:49,455 - INFO - Time: 1741309429.46s | Pan Error: -8.21, Tilt Error: -9.67
+2025-03-07 01:03:49,455 - INFO - Pan Angle: 8.64, Tilt Angle: -90.0
+2025-03-07 01:03:49,817 - INFO - Time: 1741309429.82s | Pan Error: 3.37, Tilt Error: -9.86
+2025-03-07 01:03:49,817 - INFO - Pan Angle: 5.13, Tilt Angle: -90.0
+2025-03-07 01:03:49,939 - INFO - Time: 1741309429.94s | Pan Error: 4.31, Tilt Error: -9.85
+2025-03-07 01:03:49,941 - INFO - Pan Angle: 0.81, Tilt Angle: -90.0
+2025-03-07 01:03:50,062 - INFO - Time: 1741309430.06s | Pan Error: 3.47, Tilt Error: -9.79
+2025-03-07 01:03:50,063 - INFO - Pan Angle: -2.7, Tilt Angle: -90.0
+2025-03-07 01:03:50,186 - INFO - Time: 1741309430.19s | Pan Error: -0.17, Tilt Error: -9.86
+2025-03-07 01:03:50,187 - INFO - Pan Angle: -2.7, Tilt Angle: -90.0
+2025-03-07 01:03:50,305 - INFO - Time: 1741309430.31s | Pan Error: -2.80, Tilt Error: -9.81
+2025-03-07 01:03:50,306 - INFO - Pan Angle: -0.0, Tilt Angle: -90.0
+2025-03-07 01:03:50,426 - INFO - Time: 1741309430.43s | Pan Error: -4.38, Tilt Error: -9.78
+2025-03-07 01:03:50,427 - INFO - Pan Angle: 4.32, Tilt Angle: -90.0
+2025-03-07 01:03:50,552 - INFO - Time: 1741309430.55s | Pan Error: -4.27, Tilt Error: -9.70
+2025-03-07 01:03:50,553 - INFO - Pan Angle: 8.37, Tilt Angle: -90.0
+2025-03-07 01:03:50,827 - INFO - Time: 1741309430.83s | Pan Error: 2.89, Tilt Error: -9.75
+2025-03-07 01:03:50,828 - INFO - Pan Angle: 5.4, Tilt Angle: -90.0
+2025-03-07 01:03:50,956 - INFO - Time: 1741309430.96s | Pan Error: 4.72, Tilt Error: -9.71
+2025-03-07 01:03:50,957 - INFO - Pan Angle: 0.54, Tilt Angle: -90.0
+2025-03-07 01:03:51,081 - INFO - Time: 1741309431.08s | Pan Error: 3.84, Tilt Error: -9.70
+2025-03-07 01:03:51,082 - INFO - Pan Angle: -3.51, Tilt Angle: -90.0
+2025-03-07 01:03:51,315 - INFO - Time: 1741309431.32s | Pan Error: -3.79, Tilt Error: -9.71
+2025-03-07 01:03:51,316 - INFO - Pan Angle: 0.27, Tilt Angle: -90.0
+2025-03-07 01:03:51,439 - INFO - Time: 1741309431.44s | Pan Error: -5.51, Tilt Error: -9.66
+2025-03-07 01:03:51,439 - INFO - Pan Angle: 5.67, Tilt Angle: -90.0
+2025-03-07 01:03:51,561 - INFO - Time: 1741309431.56s | Pan Error: -4.68, Tilt Error: -9.66
+2025-03-07 01:03:51,562 - INFO - Pan Angle: 10.26, Tilt Angle: -90.0
+2025-03-07 01:03:51,685 - INFO - Time: 1741309431.69s | Pan Error: -0.42, Tilt Error: -9.61
+2025-03-07 01:03:51,686 - INFO - Pan Angle: 10.53, Tilt Angle: -90.0
+2025-03-07 01:03:51,926 - INFO - Time: 1741309431.93s | Pan Error: 6.37, Tilt Error: -9.62
+2025-03-07 01:03:51,927 - INFO - Pan Angle: 4.05, Tilt Angle: -90.0
+2025-03-07 01:03:52,055 - INFO - Time: 1741309432.06s | Pan Error: 6.72, Tilt Error: -9.65
+2025-03-07 01:03:52,056 - INFO - Pan Angle: -2.7, Tilt Angle: -90.0
+2025-03-07 01:03:52,178 - INFO - Time: 1741309432.18s | Pan Error: 3.56, Tilt Error: -9.61
+2025-03-07 01:03:52,179 - INFO - Pan Angle: -6.48, Tilt Angle: -90.0
+2025-03-07 01:03:52,442 - INFO - Time: 1741309432.44s | Pan Error: -6.19, Tilt Error: -9.65
+2025-03-07 01:03:52,442 - INFO - Pan Angle: -0.54, Tilt Angle: -90.0
+2025-03-07 01:03:57,881 - INFO - Stream stats - Frame: 1200, Size: 197972 bytes, Clients: 1
+2025-03-07 01:03:58,359 - INFO - Client disconnected. Remaining clients: 0
+2025-03-07 01:03:58,362 - INFO - Saved data at: /home/lberm/Documents/github/Senior_Desing_QKD_2024/src/Pi_Control/runs/run_2025-03-07_01-03-12/data_pan.csv
+2025-03-07 01:03:58,982 - INFO - Pan plot saved at: /home/lberm/Documents/github/Senior_Desing_QKD_2024/src/Pi_Control/runs/run_2025-03-07_01-03-12/pan_response.png
+2025-03-07 01:03:59,532 - INFO - Tilt plot saved at: /home/lberm/Documents/github/Senior_Desing_QKD_2024/src/Pi_Control/runs/run_2025-03-07_01-03-12/tilt_response.png
+2025-03-07 01:04:40,827 - INFO - Camera stopped

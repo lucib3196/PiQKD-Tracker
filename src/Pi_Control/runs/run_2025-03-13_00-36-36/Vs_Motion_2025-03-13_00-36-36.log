@@ -1,0 +1,37 @@
+2025-03-13 00:36:36,838 - INFO - Logging system initialized.
+2025-03-13 00:36:36,839 - INFO - 
+Pan and Tilt Mechanism: 
+Current Date: 2025-03-13_00-36-36
+
+------------------------- Running Parameters -------------------------
+Pan Servo: Pin 17, PID Values: 
+ KP: 0.5
+ KI: 0.0
+ KD: 0.5, Angle Range -135-135, Current Angle -0.0
+Tilt Servo: Pin 27, PID Values: 
+ KP: 0.5
+ KI: 0.0
+ KD: 0.5, Angle Range -90-90, Current Angle -0.0
+
+Tracking Point: False
+--------------------------------------------------
+
+2025-03-13 00:36:36,867 - INFO - Initialization successful.
+2025-03-13 00:36:36,868 - INFO - Camera now open.
+2025-03-13 00:36:36,872 - INFO - Camera configuration has been adjusted!
+2025-03-13 00:36:36,879 - INFO - Configuration successful!
+2025-03-13 00:36:36,939 - INFO - Camera started
+2025-03-13 00:36:36,953 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-13 00:36:36,954 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 00:36:37,134 - INFO - Stream stats - Frame: 0, Size: 184811 bytes, Clients: 0
+2025-03-13 00:36:40,359 - INFO - 172.20.10.2 - - [13/Mar/2025 00:36:40] "GET / HTTP/1.1" 200 -
+2025-03-13 00:36:40,416 - INFO - Client connected. Total clients: 1
+2025-03-13 00:36:40,560 - INFO - Time: 1741826200.56s | Pan Error: 17.93, Tilt Error: -6.49
+2025-03-13 00:36:40,561 - INFO - Pan Angle: -88.29, Tilt Angle: -32.04
+2025-03-13 00:36:40,573 - INFO - 172.20.10.2 - - [13/Mar/2025 00:36:40] "GET /video_feed HTTP/1.1" 200 -
+2025-03-13 00:36:40,709 - INFO - Time: 1741826200.71s | Pan Error: 17.35, Tilt Error: -6.57
+2025-03-13 00:36:40,710 - INFO - Pan Angle: -96.12, Tilt Angle: -35.64
+2025-03-13 00:36:47,500 - INFO - Camera stopped

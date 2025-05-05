@@ -29,17 +29,20 @@ from gpiozero import Device
 Device.pin_factory = PiGPIOFactory()
 # Constant
 BASE_MIN = 0
-BASE_MAX = 270
-# Initialize the base servo on GPIO pin 17 with a range from -90 to 90 degrees
-base_servo = AngularServo(17,min_angle=BASE_MIN,max_angle = BASE_MAX)
+BASE_MAX = 180
+
+BASE_MIN_TOP = -90
+BASE_MAX_TOP = 90
+# # Initialize the base servo on GPIO pin 17 with a range from -90 to 90 degrees
+base_servo = AngularServo(17,min_angle=BASE_MIN,max_angle = BASE_MAX, min_pulse_width=0.5/1000, max_pulse_width=2.5/1000)
 
 # Initialize the upper servo on GPIO pin 27 with a range from -45 to 45 degrees
-upper_servo = AngularServo(27,min_angle=BASE_MIN,max_angle = BASE_MAX)
+upper_servo = AngularServo(27,min_angle=-90,max_angle = 90, min_pulse_width=0.5/1000, max_pulse_width=2.5/1000)
 
 # Infinite loop to test the servos
 try:
     while True:
-        # Move the base servo to its minimum angle (-90 degrees)
+        # # Move the base servo to its minimum angle (-90 degrees)
         base_servo.angle = BASE_MIN
         print(f"Base servo set to {BASE_MIN} degrees")
         sleep(2)  # Wait for 2 seconds
@@ -50,13 +53,13 @@ try:
         sleep(2)  # Wait for 2 seconds
 
         # Move the upper servo to its minimum angle (-45 degrees)
-        upper_servo.angle = BASE_MIN
-        print("Upper servo set to -90 degrees")
+        upper_servo.angle = BASE_MIN_TOP+45
+        print(f"Upper servo set to {upper_servo.angle} degrees")
         sleep(2)  # Wait for 2 seconds
 
         # Move the upper servo to its maximum angle (45 degrees)
-        upper_servo.angle = BASE_MAX
-        print("Upper servo set to  degrees")
+        upper_servo.angle = BASE_MAX_TOP-30
+        print(f"Upper servo set to {upper_servo.angle} degrees")
         sleep(2)  # Wait for 2 seconds
 
 except KeyboardInterrupt:

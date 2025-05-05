@@ -1,0 +1,37 @@
+2025-03-06 21:32:11,080 - INFO - Face tracking logging system initialized.
+2025-03-06 21:32:11,126 - INFO - Initialization successful.
+2025-03-06 21:32:11,127 - INFO - Camera now open.
+2025-03-06 21:32:11,131 - INFO - Camera configuration has been adjusted!
+2025-03-06 21:32:11,133 - INFO - Configuration successful!
+2025-03-06 21:32:11,193 - INFO - Camera started
+2025-03-06 21:32:11,207 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-06 21:32:11,208 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 21:32:11,407 - INFO - Stream stats - Frame: 0, Size: 219292 bytes, Clients: 0
+2025-03-06 21:32:22,150 - INFO - 172.20.10.2 - - [06/Mar/2025 21:32:22] "GET / HTTP/1.1" 200 -
+2025-03-06 21:32:22,219 - INFO - Client connected. Total clients: 1
+2025-03-06 21:32:22,313 - INFO - 172.20.10.2 - - [06/Mar/2025 21:32:22] "GET /video_feed HTTP/1.1" 200 -
+2025-03-06 21:32:27,928 - INFO - Elapsed Time: 16.70s | Pan Error: 300.00 | Face Confidence: 67%
+2025-03-06 21:32:28,011 - INFO - Elapsed Time: 16.78s | Pan Error: 303.00 | Face Confidence: 60%
+2025-03-06 21:32:28,544 - INFO - Elapsed Time: 17.31s | Pan Error: -367.00 | Face Confidence: 58%
+2025-03-06 21:32:28,625 - INFO - Elapsed Time: 17.40s | Pan Error: -460.00 | Face Confidence: 60%
+2025-03-06 21:32:32,282 - INFO - Stream stats - Frame: 300, Size: 236614 bytes, Clients: 1
+2025-03-06 21:32:34,290 - INFO - Elapsed Time: 23.06s | Pan Error: 299.00 | Face Confidence: 63%
+2025-03-06 21:32:34,371 - INFO - Elapsed Time: 23.14s | Pan Error: 214.00 | Face Confidence: 81%
+2025-03-06 21:32:35,892 - INFO - Elapsed Time: 24.67s | Pan Error: -276.00 | Face Confidence: 57%
+2025-03-06 21:32:36,049 - INFO - Elapsed Time: 24.82s | Pan Error: -328.00 | Face Confidence: 50%
+2025-03-06 21:32:38,510 - INFO - Elapsed Time: 27.28s | Pan Error: 400.00 | Face Confidence: 65%
+2025-03-06 21:32:38,596 - INFO - Elapsed Time: 27.36s | Pan Error: 343.00 | Face Confidence: 74%
+2025-03-06 21:32:39,212 - INFO - Elapsed Time: 27.98s | Pan Error: 395.00 | Face Confidence: 57%
+2025-03-06 21:32:39,289 - INFO - Elapsed Time: 28.06s | Pan Error: 238.00 | Face Confidence: 64%
+2025-03-06 21:32:39,366 - INFO - Elapsed Time: 28.14s | Pan Error: 197.00 | Face Confidence: 57%
+2025-03-06 21:32:39,601 - INFO - Elapsed Time: 28.37s | Pan Error: -530.00 | Face Confidence: 51%
+2025-03-06 21:32:40,207 - INFO - Elapsed Time: 28.98s | Pan Error: 261.00 | Face Confidence: 60%
+2025-03-06 21:32:40,287 - INFO - Elapsed Time: 29.06s | Pan Error: 388.00 | Face Confidence: 60%
+2025-03-06 21:32:42,335 - INFO - Stream stats - Frame: 600, Size: 211997 bytes, Clients: 1
+2025-03-06 21:32:52,396 - INFO - Stream stats - Frame: 900, Size: 216391 bytes, Clients: 1
+2025-03-06 21:32:54,825 - INFO - Client disconnected. Remaining clients: 0
+2025-03-06 21:32:54,827 - INFO - Saved data at: /home/lberm/Documents/github/Senior_Desing_QKD_2024/src/Pi_Control/face_runs/run_2025-03-06_21-32-11/data_face.csv
+2025-03-06 21:33:26,398 - INFO - Camera stopped

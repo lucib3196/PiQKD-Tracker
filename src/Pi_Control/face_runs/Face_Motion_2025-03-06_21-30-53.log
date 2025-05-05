@@ -1,0 +1,68 @@
+2025-03-06 21:30:53,433 - INFO - Face tracking logging system initialized.
+2025-03-06 21:30:53,480 - INFO - Initialization successful.
+2025-03-06 21:30:53,480 - INFO - Camera now open.
+2025-03-06 21:30:53,485 - INFO - Camera configuration has been adjusted!
+2025-03-06 21:30:53,487 - INFO - Configuration successful!
+2025-03-06 21:30:53,534 - INFO - Camera started
+2025-03-06 21:30:53,547 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-06 21:30:53,548 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 21:30:53,748 - INFO - Stream stats - Frame: 0, Size: 191921 bytes, Clients: 0
+2025-03-06 21:30:56,374 - INFO - 172.20.10.2 - - [06/Mar/2025 21:30:56] "GET / HTTP/1.1" 200 -
+2025-03-06 21:30:56,432 - INFO - Client connected. Total clients: 1
+2025-03-06 21:30:56,485 - INFO - 172.20.10.2 - - [06/Mar/2025 21:30:56] "GET /video_feed HTTP/1.1" 200 -
+2025-03-06 21:31:03,007 - INFO - Elapsed Time: 9.44s | Pan Error: 9.38 | Face Confidence: 71%
+2025-03-06 21:31:03,166 - INFO - Elapsed Time: 9.60s | Pan Error: 5.78 | Face Confidence: 64%
+2025-03-06 21:31:03,405 - INFO - Elapsed Time: 9.83s | Pan Error: -7.50 | Face Confidence: 56%
+2025-03-06 21:31:03,488 - INFO - Elapsed Time: 9.92s | Pan Error: -15.31 | Face Confidence: 55%
+2025-03-06 21:31:03,568 - INFO - Elapsed Time: 10.00s | Pan Error: -15.00 | Face Confidence: 66%
+2025-03-06 21:31:03,652 - INFO - Elapsed Time: 10.08s | Pan Error: -7.66 | Face Confidence: 55%
+2025-03-06 21:31:03,887 - INFO - Elapsed Time: 10.32s | Pan Error: 37.81 | Face Confidence: 69%
+2025-03-06 21:31:03,970 - INFO - Elapsed Time: 10.40s | Pan Error: 44.06 | Face Confidence: 60%
+2025-03-06 21:31:04,281 - INFO - Elapsed Time: 10.71s | Pan Error: -61.72 | Face Confidence: 68%
+2025-03-06 21:31:04,667 - INFO - Elapsed Time: 11.10s | Pan Error: 21.25 | Face Confidence: 52%
+2025-03-06 21:31:04,747 - INFO - Elapsed Time: 11.18s | Pan Error: 26.25 | Face Confidence: 75%
+2025-03-06 21:31:05,056 - INFO - Elapsed Time: 11.49s | Pan Error: -35.62 | Face Confidence: 58%
+2025-03-06 21:31:05,296 - INFO - Elapsed Time: 11.73s | Pan Error: -7.50 | Face Confidence: 51%
+2025-03-06 21:31:05,378 - INFO - Elapsed Time: 11.81s | Pan Error: -3.12 | Face Confidence: 54%
+2025-03-06 21:31:05,458 - INFO - Elapsed Time: 11.89s | Pan Error: 6.25 | Face Confidence: 54%
+2025-03-06 21:31:06,011 - INFO - Elapsed Time: 12.44s | Pan Error: 13.44 | Face Confidence: 57%
+2025-03-06 21:31:06,096 - INFO - Elapsed Time: 12.52s | Pan Error: 12.03 | Face Confidence: 63%
+2025-03-06 21:31:06,247 - INFO - Elapsed Time: 12.68s | Pan Error: 3.59 | Face Confidence: 56%
+2025-03-06 21:31:06,491 - INFO - Stream stats - Frame: 300, Size: 225687 bytes, Clients: 1
+2025-03-06 21:31:06,564 - INFO - Elapsed Time: 12.99s | Pan Error: -32.19 | Face Confidence: 51%
+2025-03-06 21:31:06,948 - INFO - Elapsed Time: 13.38s | Pan Error: 6.41 | Face Confidence: 68%
+2025-03-06 21:31:07,527 - INFO - Elapsed Time: 13.95s | Pan Error: 5.31 | Face Confidence: 63%
+2025-03-06 21:31:07,610 - INFO - Elapsed Time: 14.04s | Pan Error: 3.59 | Face Confidence: 55%
+2025-03-06 21:31:07,697 - INFO - Elapsed Time: 14.12s | Pan Error: 4.22 | Face Confidence: 57%
+2025-03-06 21:31:08,154 - INFO - Elapsed Time: 14.59s | Pan Error: -16.88 | Face Confidence: 55%
+2025-03-06 21:31:09,806 - INFO - Elapsed Time: 16.24s | Pan Error: 6.25 | Face Confidence: 62%
+2025-03-06 21:31:09,885 - INFO - Elapsed Time: 16.32s | Pan Error: 8.59 | Face Confidence: 52%
+2025-03-06 21:31:10,353 - INFO - Elapsed Time: 16.78s | Pan Error: 2.81 | Face Confidence: 52%
+2025-03-06 21:31:16,528 - INFO - Stream stats - Frame: 600, Size: 246798 bytes, Clients: 1
+2025-03-06 21:31:17,815 - INFO - Elapsed Time: 24.25s | Pan Error: 72.81 | Face Confidence: 50%
+2025-03-06 21:31:18,196 - INFO - Elapsed Time: 24.63s | Pan Error: -9.06 | Face Confidence: 59%
+2025-03-06 21:31:18,348 - INFO - Elapsed Time: 24.78s | Pan Error: -9.69 | Face Confidence: 51%
+2025-03-06 21:31:18,434 - INFO - Elapsed Time: 24.86s | Pan Error: -10.47 | Face Confidence: 53%
+2025-03-06 21:31:18,819 - INFO - Elapsed Time: 25.25s | Pan Error: 17.50 | Face Confidence: 51%
+2025-03-06 21:31:21,848 - INFO - Elapsed Time: 28.27s | Pan Error: -69.06 | Face Confidence: 51%
+2025-03-06 21:31:22,003 - INFO - Elapsed Time: 28.44s | Pan Error: -66.56 | Face Confidence: 51%
+2025-03-06 21:31:26,579 - INFO - Stream stats - Frame: 900, Size: 238664 bytes, Clients: 1
+2025-03-06 21:31:26,947 - INFO - Elapsed Time: 33.38s | Pan Error: 73.44 | Face Confidence: 52%
+2025-03-06 21:31:27,404 - INFO - Elapsed Time: 33.84s | Pan Error: 87.19 | Face Confidence: 57%
+2025-03-06 21:31:27,790 - INFO - Elapsed Time: 34.22s | Pan Error: -32.81 | Face Confidence: 58%
+2025-03-06 21:31:27,944 - INFO - Elapsed Time: 34.38s | Pan Error: -39.53 | Face Confidence: 53%
+2025-03-06 21:31:28,250 - INFO - Elapsed Time: 34.68s | Pan Error: -58.91 | Face Confidence: 73%
+2025-03-06 21:31:28,328 - INFO - Elapsed Time: 34.76s | Pan Error: -48.44 | Face Confidence: 60%
+2025-03-06 21:31:28,409 - INFO - Elapsed Time: 34.84s | Pan Error: 64.22 | Face Confidence: 61%
+2025-03-06 21:31:28,725 - INFO - Elapsed Time: 35.15s | Pan Error: 32.81 | Face Confidence: 69%
+2025-03-06 21:31:28,878 - INFO - Elapsed Time: 35.31s | Pan Error: 34.38 | Face Confidence: 50%
+2025-03-06 21:31:29,112 - INFO - Elapsed Time: 35.54s | Pan Error: -16.25 | Face Confidence: 67%
+2025-03-06 21:31:29,195 - INFO - Elapsed Time: 35.62s | Pan Error: -23.12 | Face Confidence: 73%
+2025-03-06 21:31:29,278 - INFO - Elapsed Time: 35.71s | Pan Error: -19.53 | Face Confidence: 59%
+2025-03-06 21:31:36,655 - INFO - Stream stats - Frame: 1200, Size: 242814 bytes, Clients: 1
+2025-03-06 21:31:47,176 - INFO - Stream stats - Frame: 1500, Size: 244748 bytes, Clients: 1
+2025-03-06 21:31:57,285 - INFO - Stream stats - Frame: 1800, Size: 245370 bytes, Clients: 1
+2025-03-06 21:32:05,678 - INFO - Camera stopped

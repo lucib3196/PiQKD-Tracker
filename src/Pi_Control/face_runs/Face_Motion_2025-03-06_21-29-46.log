@@ -1,0 +1,42 @@
+2025-03-06 21:29:46,679 - INFO - Face tracking logging system initialized.
+2025-03-06 21:29:46,727 - INFO - Initialization successful.
+2025-03-06 21:29:46,727 - INFO - Camera now open.
+2025-03-06 21:29:46,732 - INFO - Camera configuration has been adjusted!
+2025-03-06 21:29:46,734 - INFO - Configuration successful!
+2025-03-06 21:29:46,809 - INFO - Camera started
+2025-03-06 21:29:46,852 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-06 21:29:46,853 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-06 21:29:47,018 - INFO - Stream stats - Frame: 0, Size: 243714 bytes, Clients: 0
+2025-03-06 21:29:53,010 - INFO - 172.20.10.2 - - [06/Mar/2025 21:29:53] "GET / HTTP/1.1" 200 -
+2025-03-06 21:29:53,079 - INFO - Client connected. Total clients: 1
+2025-03-06 21:29:53,188 - INFO - 172.20.10.2 - - [06/Mar/2025 21:29:53] "GET /video_feed HTTP/1.1" 200 -
+2025-03-06 21:30:03,155 - INFO - Stream stats - Frame: 300, Size: 255639 bytes, Clients: 1
+2025-03-06 21:30:13,194 - INFO - Stream stats - Frame: 600, Size: 260685 bytes, Clients: 1
+2025-03-06 21:30:14,402 - INFO - Elapsed Time: 27.55s | Pan Error: 41.09 | Face Confidence: 60%
+2025-03-06 21:30:15,075 - INFO - Elapsed Time: 28.22s | Pan Error: -27.66 | Face Confidence: 75%
+2025-03-06 21:30:15,157 - INFO - Elapsed Time: 28.30s | Pan Error: -24.69 | Face Confidence: 78%
+2025-03-06 21:30:15,389 - INFO - Elapsed Time: 28.54s | Pan Error: 28.59 | Face Confidence: 65%
+2025-03-06 21:30:15,466 - INFO - Elapsed Time: 28.61s | Pan Error: 35.62 | Face Confidence: 76%
+2025-03-06 21:30:15,782 - INFO - Elapsed Time: 28.93s | Pan Error: -31.09 | Face Confidence: 80%
+2025-03-06 21:30:15,861 - INFO - Elapsed Time: 29.01s | Pan Error: -34.84 | Face Confidence: 84%
+2025-03-06 21:30:15,940 - INFO - Elapsed Time: 29.09s | Pan Error: -36.72 | Face Confidence: 77%
+2025-03-06 21:30:17,174 - INFO - Elapsed Time: 30.32s | Pan Error: 80.16 | Face Confidence: 62%
+2025-03-06 21:30:17,257 - INFO - Elapsed Time: 30.40s | Pan Error: 76.56 | Face Confidence: 59%
+2025-03-06 21:30:19,018 - INFO - Elapsed Time: 32.16s | Pan Error: -76.25 | Face Confidence: 53%
+2025-03-06 21:30:19,102 - INFO - Elapsed Time: 32.25s | Pan Error: -69.38 | Face Confidence: 82%
+2025-03-06 21:30:19,185 - INFO - Elapsed Time: 32.33s | Pan Error: -63.91 | Face Confidence: 50%
+2025-03-06 21:30:23,250 - INFO - Stream stats - Frame: 900, Size: 239977 bytes, Clients: 1
+2025-03-06 21:30:23,867 - INFO - Elapsed Time: 37.01s | Pan Error: 7.50 | Face Confidence: 57%
+2025-03-06 21:30:25,239 - INFO - Elapsed Time: 38.38s | Pan Error: 7.66 | Face Confidence: 57%
+2025-03-06 21:30:25,324 - INFO - Elapsed Time: 38.46s | Pan Error: 4.69 | Face Confidence: 55%
+2025-03-06 21:30:25,561 - INFO - Elapsed Time: 38.71s | Pan Error: -20.00 | Face Confidence: 51%
+2025-03-06 21:30:25,640 - INFO - Elapsed Time: 38.79s | Pan Error: -24.84 | Face Confidence: 54%
+2025-03-06 21:30:25,873 - INFO - Elapsed Time: 39.02s | Pan Error: 18.91 | Face Confidence: 55%
+2025-03-06 21:30:25,955 - INFO - Elapsed Time: 39.10s | Pan Error: 22.81 | Face Confidence: 62%
+2025-03-06 21:30:26,042 - INFO - Elapsed Time: 39.18s | Pan Error: 16.88 | Face Confidence: 62%
+2025-03-06 21:30:33,302 - INFO - Stream stats - Frame: 1200, Size: 250053 bytes, Clients: 1
+2025-03-06 21:30:43,426 - INFO - Stream stats - Frame: 1500, Size: 250148 bytes, Clients: 1
+2025-03-06 21:30:49,853 - INFO - Camera stopped

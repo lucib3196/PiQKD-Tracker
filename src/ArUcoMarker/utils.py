@@ -1,14 +1,11 @@
-# This code contains multiple utility functions of the servo control
-
-
 import cv2
 import cv2.aruco as aruco
-import time 
+import time
 import numpy as np
 import math
 
-# Constants 
-aruco_dict_type = cv2.aruco.DICT_6X6_250
+# Constants
+ARUCO_DICT_TYPE = cv2.aruco.DICT_6X6_250
 
 def find_marker(frame, aruco_dict, parameters):
     """
@@ -32,22 +29,19 @@ def find_marker(frame, aruco_dict, parameters):
             marker_arr.append((marker_corner, marker_id))
 
     return marker_arr
-    
-    
-def get_corner_and_center(marker_corner):
+
+def get_corner_and_center(marker):
     """
-    Calculates the corners and center of an ArUco marker.
+    Calculates the corner coordinates and center point of an ArUco marker.
 
     Parameters:
-        marker_corner (numpy.ndarray): A 4x2 array containing the coordinates of the marker's corners.
-                                       Example: [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+        marker (numpy.ndarray): The marker corners in an array that can be reshaped to (4, 2).
 
     Returns:
-        list: A list containing the four corners (top-left, top-right, bottom-right, bottom-left) as tuples of integers,
-              and the center point as a tuple.
-              Example: [(top_left), (top_right), (bottom_right), (bottom_left), (center)]
+        list: A list containing tuples for the top-left, top-right, bottom-right, bottom-left corners,
+              and the center point of the marker.
     """
-    corners_abcd = marker_corner.reshape((4, 2))
+    corners_abcd = marker.reshape((4, 2))
     top_left, top_right, bottom_right, bottom_left = corners_abcd
 
     top_left = (int(top_left[0]), int(top_left[1]))
@@ -61,14 +55,88 @@ def get_corner_and_center(marker_corner):
 
     return [top_left, top_right, bottom_right, bottom_left, center]
 
-
-def draw_id(frame, coor, marker_id):
+def estimatePoseAndTransformation(marker, camera_matrix, distortion_coeff, marker_length=0.1):
     """
-    Draws the marker ID at the top-left corner of the marker on the frame.
+    Estimates the pose of an ArUco marker and returns the transformation matrix along with its distance,
+    rotation vector, and translation vector.
+
+    Parameters:
+        marker (numpy.ndarray): Marker corners.
+        camera_matrix (numpy.ndarray): Camera intrinsic matrix.
+        distortion_coeff (numpy.ndarray): Camera distortion coefficients.
+        marker_length (float): The physical length of the marker in meters (default is 0.1).
+
+    Returns:
+        tuple: (transformation_matrix, distance, rvec, tvec)
+            - transformation_matrix (numpy.ndarray): 4x4 transformation matrix.
+            - distance (float): Distance to the marker in centimeters.
+            - rvec (numpy.ndarray): Rotation vector.
+            - tvec (numpy.ndarray): Translation vector.
+    """
+    # Estimate pose of the marker and get the transformation matrix
+    rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers(marker, marker_length, camera_matrix, distortion_coeff)
+    R, _ = cv2.Rodrigues(rvec)
+    # print(f"This is the marker length{marker_length}")
+    transformation_matrix = np.hstack((R, tvec[0].T))
+    transformation_matrix = np.vstack((transformation_matrix, np.array([0, 0, 0, 1])))
+
+    # Calculate the norm distance of the marker in centimeters
+    distance = np.linalg.norm(tvec) * 100
+    return transformation_matrix, distance, rvec, tvec
+
+def track_and_render_marker(frame, marker, marker_id, camera_matrix, distortion_coefficient, marker_length):
+    """
+    Tracks the marker and renders its square frame, axis, and ID on the frame.
+
+    This function estimates the pose of the marker, draws a square frame around it,
+    annotates its ID, and renders the coordinate axes based on the estimated pose.
+    It serves as the main function for marker tracking in the project.
+
+    Parameters:
+        frame (numpy.ndarray): The frame to draw on.
+        marker (numpy.ndarray): The detected marker's corners.
+        marker_id (int): The ID of the marker.
+        camera_matrix (numpy.ndarray): The camera's intrinsic matrix.
+        distortion_coefficient (numpy.ndarray): The camera's distortion coefficients.
+        marker_length (float): The physical length of the marker in meters.
+    """
+    marker_coordinates = get_corner_and_center(marker)
+    transformation_matrix, distance, rvec, tvec = estimatePoseAndTransformation(
+        marker, camera_matrix, distortion_coefficient, marker_length
+    )
+    draw_square_frame(frame, marker_coordinates)
+    draw_id(frame, marker_coordinates, marker_id)
+    display_distance_marker(frame,marker_id,distance)
+    cv2.drawFrameAxes(frame, camera_matrix, distortion_coefficient, rvec, tvec, marker_length)
+    return transformation_matrix
+
+
+
+def draw_square_frame(frame, coordinates):
+    """
+    Draws a square frame around the marker using its corner coordinates.
+
+    Parameters:
+        frame (numpy.ndarray): The frame on which to draw.
+        coordinates (list): A list containing the corner coordinates and center point of the marker.
+    """
+    [top_left, top_right, bottom_right, bottom_left, center] = coordinates
+    # Draw lines connecting the marker corners
+    cv2.line(frame, top_left, top_right, (0, 255, 0), 2)
+    cv2.line(frame, top_right, bottom_right, (0, 255, 0), 2)
+    cv2.line(frame, bottom_right, bottom_left, (0, 255, 0), 2)
+    cv2.line(frame, bottom_left, top_left, (0, 255, 0), 2)
+
+    # Draw center dot    
+    cv2.circle(frame, center, 5, (255, 0, 255), cv2.FILLED)
+
+def draw_id(frame, coordinates, marker_id):
+    """
+    Draws the marker ID at the top-right corner of the marker on the frame.
 
     Parameters:
         frame (numpy.ndarray): The frame/image to draw on.
-        coor (list): A list of corner coordinates, where coor[0] is the top-left corner.
+        coordinates (list): A list of corner coordinates, where the second element is used as the position.
         marker_id (int): The ID to draw.
 
     Returns:
@@ -79,43 +147,19 @@ def draw_id(frame, coor, marker_id):
     color = (0, 255, 0)
     thickness = 2
 
-    top_right = coor[1]
+    top_right = coordinates[1]
     cv2.putText(frame, str(marker_id), top_right, font, font_scale, color, thickness)
     return frame
 
-def draw_square_frame(image_frame, coordinates):
-    [top_left, top_right, bottom_right, bottom_left, center] = coordinates
-    # Draw lines connecting the marker corners
-    cv2.line(image_frame, top_left, top_right, (0, 255, 0), 2)
-    cv2.line(image_frame, top_right, bottom_right, (0, 255, 0), 2)
-    cv2.line(image_frame, bottom_right, bottom_left, (0, 255, 0), 2)
-    cv2.line(image_frame, bottom_left, top_left, (0, 255, 0), 2)
-    
-    cv2.circle(image_frame, center, 5, (255, 0, 255), cv2.FILLED) # Center dot 
-    
-    
-def estimate_marker_pose_single(frame, marker, camera_matrix, distortion_coeff, marker_id, marker_length=0.1):
-    """Estimate the pose of an ArUco marker and display its distance on the frame.
-
-    Args:
-        frame (numpy.ndarray): The image frame where the marker is detected.
-        marker (numpy.ndarray): The detected marker corners.
-        camera_matrix (numpy.ndarray): Camera matrix for intrinsic parameters.
-        distortion_coeff (numpy.ndarray): Distortion coefficients of the camera.
-        marker_id (int): ID of the marker being processed.
-        marker_length (float, optional): Length of the marker's side in meters. Defaults to 0.1.
-
-    Returns:
-        None: The function modifies the input frame to display marker ID and distance.
+def display_distance_marker(frame, marker_id, distance):
     """
+    Displays the marker ID and its distance on the frame.
 
-    # Estimate the pose of the marker
-    rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers(marker, marker_length, camera_matrix, distortion_coeff)
-
-    # Calculate the distance to the marker in centimeters
-    distance = np.linalg.norm(tvec) * 100  # Convert to cm
-
-    # Display the marker ID and distance on the frame
+    Parameters:
+        frame (numpy.ndarray): The image frame to display the text on.
+        marker_id (int): The ID of the marker.
+        distance (float): The distance to the marker in centimeters.
+    """
     cv2.putText(
         frame,
         f"Marker: {marker_id}, Distance: {distance:.2f} cm",
@@ -125,7 +169,10 @@ def estimate_marker_pose_single(frame, marker, camera_matrix, distortion_coeff, 
         (255, 255, 255),
         3
     )
-    return distance
+
+    
+#------------Deprecated for now------------------#
+
     
 def estimate_marker_pose_multiple(frame, marker_array, camera_matrix, distortion_coeff, marker_lenght = 0.1):
     all_text = ""
@@ -133,7 +180,9 @@ def estimate_marker_pose_multiple(frame, marker_array, camera_matrix, distortion
         rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers(marker, marker_lenght, camera_matrix, distortion_coeff)
         distance = np.linalg.norm(tvec) * 100  # Convert to cm
         all_text += f"Marker: {marker_id}, Distance: {distance:.2f} cm \n"
-    print(all_text)    
+    print(all_text)  
+    print(f'This is the orientation {rvec}')  
+    print(f'This is the translational vector {tvec}')
      # Display text on the frame
     y_off = 200  # Starting vertical position for the text
     for line in all_text.split('\n'):
@@ -313,4 +362,10 @@ def correct_white_balance(frame):
     return corrected_frame
 
 def draw_center_frame(frame, center):
-    cv2.circle(frame, center, 5, (255, 0, 0), 1)
+    cv2.circle(frame, center, 5, (255, 0, 0), 4)
+    
+    
+
+    
+    
+    

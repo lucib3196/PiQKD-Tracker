@@ -1,0 +1,35 @@
+2025-03-07 02:15:57,031 - INFO - Logging system initialized.
+2025-03-07 02:15:57,032 - INFO - 
+Pan and Tilt Mechanism: 
+Current Date: 2025-03-07_02-15-57
+
+------------------------- Running Parameters -------------------------
+Pan Servo: Pin 17, PID Values: 
+ KP: 0.5
+ KI: 0.0
+ KD: 0.5, Angle Range -135-135, Current Angle -0.0
+Tilt Servo: Pin 27, PID Values: 
+ KP: 0.3
+ KI: 0.0
+ KD: 0.3, Angle Range -90-90, Current Angle -0.0
+
+Tracking Point: False
+--------------------------------------------------
+
+2025-03-07 02:15:57,061 - INFO - Initialization successful.
+2025-03-07 02:15:57,061 - INFO - Camera now open.
+2025-03-07 02:15:57,065 - INFO - Camera configuration has been adjusted!
+2025-03-07 02:15:57,067 - INFO - Configuration successful!
+2025-03-07 02:15:57,126 - INFO - Camera started
+2025-03-07 02:15:57,140 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-07 02:15:57,140 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-07 02:15:57,319 - INFO - Stream stats - Frame: 0, Size: 172589 bytes, Clients: 0
+2025-03-07 02:15:59,149 - INFO - 172.20.10.2 - - [07/Mar/2025 02:15:59] "GET / HTTP/1.1" 200 -
+2025-03-07 02:15:59,213 - INFO - Client connected. Total clients: 1
+2025-03-07 02:15:59,333 - INFO - 172.20.10.2 - - [07/Mar/2025 02:15:59] "GET /video_feed HTTP/1.1" 200 -
+2025-03-07 02:16:09,189 - INFO - Stream stats - Frame: 300, Size: 172704 bytes, Clients: 1
+2025-03-07 02:16:19,176 - INFO - Stream stats - Frame: 600, Size: 172623 bytes, Clients: 1
+2025-03-07 02:16:20,553 - INFO - Camera stopped

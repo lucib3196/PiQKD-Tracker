@@ -8,7 +8,7 @@ from . import WebcamVideoStreamThreaded, FPS, putIterationsPerSec,VideoShow
 
 
 
-def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, aruco_dict_type=cv2.aruco.DICT_6X6_250):
+def detect_aruco_marker(image_frame, camera_matrix, distortion_coeff, aruco_dict_type=cv2.aruco.DICT_ARUCO_ORIGINAL):
     """
     Detects ArUco markers and overlays their corner coordinates and 3D pose axes.
 

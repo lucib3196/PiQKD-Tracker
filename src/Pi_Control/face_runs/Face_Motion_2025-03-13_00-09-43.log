@@ -1,0 +1,24 @@
+2025-03-13 00:09:43,469 - INFO - Face tracking logging system initialized.
+2025-03-13 00:09:43,578 - INFO - Initialization successful.
+2025-03-13 00:09:43,578 - INFO - Camera now open.
+2025-03-13 00:09:43,583 - INFO - Camera configuration has been adjusted!
+2025-03-13 00:09:43,585 - INFO - Configuration successful!
+2025-03-13 00:09:43,649 - INFO - Camera started
+2025-03-13 00:09:43,662 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-13 00:09:43,663 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-13 00:09:43,858 - INFO - Stream stats - Frame: 0, Size: 111254 bytes, Clients: 0
+2025-03-13 00:09:52,256 - INFO - Client connected. Total clients: 1
+2025-03-13 00:09:52,389 - INFO - 172.20.10.2 - - [13/Mar/2025 00:09:52] "GET /video_feed HTTP/1.1" 200 -
+2025-03-13 00:09:59,616 - INFO - Elapsed Time: 15.92s | Pan Error: 67.66 | Face Confidence: 51%
+2025-03-13 00:10:01,096 - INFO - Elapsed Time: 17.41s | Pan Error: 29.69 | Face Confidence: 57%
+2025-03-13 00:10:01,266 - INFO - Elapsed Time: 17.58s | Pan Error: 19.06 | Face Confidence: 74%
+2025-03-13 00:10:01,352 - INFO - Elapsed Time: 17.67s | Pan Error: 14.84 | Face Confidence: 61%
+2025-03-13 00:10:01,605 - INFO - Elapsed Time: 17.92s | Pan Error: 17.19 | Face Confidence: 52%
+2025-03-13 00:10:01,692 - INFO - Elapsed Time: 18.01s | Pan Error: 17.19 | Face Confidence: 51%
+2025-03-13 00:10:01,864 - INFO - Elapsed Time: 18.18s | Pan Error: 18.59 | Face Confidence: 52%
+2025-03-13 00:10:02,338 - INFO - Stream stats - Frame: 300, Size: 213443 bytes, Clients: 1
+2025-03-13 00:10:12,413 - INFO - Stream stats - Frame: 600, Size: 175234 bytes, Clients: 1
+2025-03-13 00:10:15,409 - INFO - Camera stopped

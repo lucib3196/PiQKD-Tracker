@@ -1,0 +1,111 @@
+2025-03-07 03:27:09,967 - INFO - Logging system initialized.
+2025-03-07 03:27:09,967 - INFO - 
+Pan and Tilt Mechanism: 
+Current Date: 2025-03-07_03-27-09
+
+------------------------- Running Parameters -------------------------
+Pan Servo: Pin 17, PID Values: 
+ KP: 0.5
+ KI: 0.0
+ KD: 0.5, Angle Range -135-135, Current Angle -0.0
+Tilt Servo: Pin 27, PID Values: 
+ KP: 0.5
+ KI: 0.1
+ KD: 0.5, Angle Range -90-90, Current Angle -0.0
+
+Tracking Point: False
+--------------------------------------------------
+
+2025-03-07 03:27:09,997 - INFO - Initialization successful.
+2025-03-07 03:27:09,997 - INFO - Camera now open.
+2025-03-07 03:27:10,001 - INFO - Camera configuration has been adjusted!
+2025-03-07 03:27:10,004 - INFO - Configuration successful!
+2025-03-07 03:27:10,051 - INFO - Camera started
+2025-03-07 03:27:10,065 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.4:5000
+2025-03-07 03:27:10,066 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-07 03:27:10,245 - INFO - Stream stats - Frame: 0, Size: 190934 bytes, Clients: 0
+2025-03-07 03:27:11,865 - INFO - 172.20.10.2 - - [07/Mar/2025 03:27:11] "GET / HTTP/1.1" 200 -
+2025-03-07 03:27:11,922 - INFO - Client connected. Total clients: 1
+2025-03-07 03:27:12,084 - INFO - 172.20.10.2 - - [07/Mar/2025 03:27:12] "GET /video_feed HTTP/1.1" 200 -
+2025-03-07 03:27:12,721 - INFO - Time: 1741318032.72s | Pan Error: -15.84, Tilt Error: -7.64
+2025-03-07 03:27:12,722 - INFO - Pan Angle: 18.09, Tilt Angle: -9.54
+2025-03-07 03:27:12,847 - INFO - Time: 1741318032.85s | Pan Error: -14.82, Tilt Error: -8.35
+2025-03-07 03:27:12,848 - INFO - Pan Angle: 24.84, Tilt Angle: -15.48
+2025-03-07 03:27:13,092 - INFO - Time: 1741318033.09s | Pan Error: -13.41, Tilt Error: 5.87
+2025-03-07 03:27:13,093 - INFO - Pan Angle: 30.78, Tilt Angle: -7.2
+2025-03-07 03:27:13,218 - INFO - Time: 1741318033.22s | Pan Error: -9.44, Tilt Error: 6.91
+2025-03-07 03:27:13,219 - INFO - Pan Angle: 33.75, Tilt Angle: -3.24
+2025-03-07 03:27:13,350 - INFO - Time: 1741318033.35s | Pan Error: -5.51, Tilt Error: -2.14
+2025-03-07 03:27:13,351 - INFO - Pan Angle: 35.1, Tilt Angle: -7.74
+2025-03-07 03:27:13,484 - INFO - Time: 1741318033.48s | Pan Error: -0.40, Tilt Error: -9.51
+2025-03-07 03:27:13,485 - INFO - Pan Angle: 33.48, Tilt Angle: -16.56
+2025-03-07 03:27:13,613 - INFO - Time: 1741318033.61s | Pan Error: 3.73, Tilt Error: -7.56
+2025-03-07 03:27:13,614 - INFO - Pan Angle: 30.24, Tilt Angle: -22.68
+2025-03-07 03:27:13,740 - INFO - Time: 1741318033.74s | Pan Error: 4.51, Tilt Error: 2.73
+2025-03-07 03:27:13,741 - INFO - Pan Angle: 27.54, Tilt Angle: -20.88
+2025-03-07 03:27:13,863 - INFO - Time: 1741318033.86s | Pan Error: 4.36, Tilt Error: 10.97
+2025-03-07 03:27:13,864 - INFO - Pan Angle: 25.38, Tilt Angle: -13.5
+2025-03-07 03:27:13,989 - INFO - Time: 1741318033.99s | Pan Error: 4.54, Tilt Error: 12.38
+2025-03-07 03:27:13,991 - INFO - Pan Angle: 22.95, Tilt Angle: -4.68
+2025-03-07 03:27:14,148 - INFO - Time: 1741318034.15s | Pan Error: 3.81, Tilt Error: 4.71
+2025-03-07 03:27:14,149 - INFO - Pan Angle: 21.06, Tilt Angle: -0.9
+2025-03-07 03:27:14,278 - INFO - Time: 1741318034.28s | Pan Error: 3.28, Tilt Error: -4.55
+2025-03-07 03:27:14,279 - INFO - Pan Angle: 19.44, Tilt Angle: -2.88
+2025-03-07 03:27:14,423 - INFO - Time: 1741318034.42s | Pan Error: 3.65, Tilt Error: -7.66
+2025-03-07 03:27:14,424 - INFO - Pan Angle: 17.28, Tilt Angle: -7.02
+2025-03-07 03:27:14,559 - INFO - Time: 1741318034.56s | Pan Error: 3.76, Tilt Error: -7.69
+2025-03-07 03:27:14,560 - INFO - Pan Angle: 15.12, Tilt Angle: -12.6
+2025-03-07 03:27:14,680 - INFO - Time: 1741318034.68s | Pan Error: 3.39, Tilt Error: -3.89
+2025-03-07 03:27:14,681 - INFO - Pan Angle: 13.23, Tilt Angle: -16.56
+2025-03-07 03:27:15,044 - INFO - Time: 1741318035.04s | Pan Error: 3.00, Tilt Error: 6.50
+2025-03-07 03:27:15,045 - INFO - Pan Angle: 11.61, Tilt Angle: -12.42
+2025-03-07 03:27:15,199 - INFO - Time: 1741318035.20s | Pan Error: 2.98, Tilt Error: 6.46
+2025-03-07 03:27:15,200 - INFO - Pan Angle: 9.99, Tilt Angle: -7.92
+2025-03-07 03:27:15,334 - INFO - Time: 1741318035.33s | Pan Error: 2.78, Tilt Error: 4.42
+2025-03-07 03:27:15,335 - INFO - Pan Angle: 8.37, Tilt Angle: -3.24
+2025-03-07 03:27:15,463 - INFO - Time: 1741318035.46s | Pan Error: 2.57, Tilt Error: -0.44
+2025-03-07 03:27:15,464 - INFO - Pan Angle: 7.02, Tilt Angle: -1.44
+2025-03-07 03:27:15,598 - INFO - Time: 1741318035.60s | Pan Error: 2.05, Tilt Error: -4.88
+2025-03-07 03:27:15,599 - INFO - Pan Angle: 5.94, Tilt Angle: -3.6
+2025-03-07 03:27:15,730 - INFO - Time: 1741318035.73s | Pan Error: 2.09, Tilt Error: -7.18
+2025-03-07 03:27:15,731 - INFO - Pan Angle: 4.86, Tilt Angle: -9.36
+2025-03-07 03:27:15,874 - INFO - Time: 1741318035.87s | Pan Error: 2.23, Tilt Error: -7.30
+2025-03-07 03:27:15,875 - INFO - Pan Angle: 3.51, Tilt Angle: -17.64
+2025-03-07 03:27:16,010 - INFO - Time: 1741318036.01s | Pan Error: 1.84, Tilt Error: -1.49
+2025-03-07 03:27:16,011 - INFO - Pan Angle: 2.43, Tilt Angle: -22.86
+2025-03-07 03:27:16,144 - INFO - Time: 1741318036.14s | Pan Error: 0.73, Tilt Error: 7.72
+2025-03-07 03:27:16,145 - INFO - Pan Angle: 2.16, Tilt Angle: -19.98
+2025-03-07 03:27:16,277 - INFO - Time: 1741318036.28s | Pan Error: 0.50, Tilt Error: 12.98
+2025-03-07 03:27:16,277 - INFO - Pan Angle: 1.89, Tilt Angle: -9.36
+2025-03-07 03:27:16,420 - INFO - Time: 1741318036.42s | Pan Error: 0.48, Tilt Error: 12.33
+2025-03-07 03:27:16,421 - INFO - Pan Angle: 1.62, Tilt Angle: 5.76
+2025-03-07 03:27:16,684 - INFO - Time: 1741318036.68s | Pan Error: -3.49, Tilt Error: -14.71
+2025-03-07 03:27:16,685 - INFO - Pan Angle: 3.78, Tilt Angle: -2.34
+2025-03-07 03:27:16,816 - INFO - Time: 1741318036.82s | Pan Error: -3.84, Tilt Error: -15.41
+2025-03-07 03:27:16,816 - INFO - Pan Angle: 5.67, Tilt Angle: -15.48
+2025-03-07 03:27:16,946 - INFO - Time: 1741318036.95s | Pan Error: -3.90, Tilt Error: -8.58
+2025-03-07 03:27:16,947 - INFO - Pan Angle: 7.56, Tilt Angle: -28.8
+2025-03-07 03:27:17,083 - INFO - Time: 1741318037.08s | Pan Error: -4.70, Tilt Error: 5.39
+2025-03-07 03:27:17,084 - INFO - Pan Angle: 9.72, Tilt Angle: -31.68
+2025-03-07 03:27:18,356 - INFO - Time: 1741318038.36s | Pan Error: -4.74, Tilt Error: 17.42
+2025-03-07 03:27:18,357 - INFO - Pan Angle: 11.88, Tilt Angle: -17.82
+2025-03-07 03:27:18,809 - INFO - Time: 1741318038.81s | Pan Error: -5.19, Tilt Error: -7.10
+2025-03-07 03:27:18,809 - INFO - Pan Angle: 14.31, Tilt Angle: -23.76
+2025-03-07 03:27:18,963 - INFO - Time: 1741318038.96s | Pan Error: -4.87, Tilt Error: -4.89
+2025-03-07 03:27:18,964 - INFO - Pan Angle: 16.47, Tilt Angle: -30.06
+2025-03-07 03:27:19,096 - INFO - Time: 1741318039.10s | Pan Error: -4.05, Tilt Error: 0.43
+2025-03-07 03:27:19,097 - INFO - Pan Angle: 18.36, Tilt Angle: -33.12
+2025-03-07 03:27:19,224 - INFO - Time: 1741318039.22s | Pan Error: -3.69, Tilt Error: 6.77
+2025-03-07 03:27:19,225 - INFO - Pan Angle: 19.98, Tilt Angle: -28.08
+2025-03-07 03:27:19,381 - INFO - Time: 1741318039.38s | Pan Error: -3.48, Tilt Error: 11.34
+2025-03-07 03:27:19,385 - INFO - Pan Angle: 21.6, Tilt Angle: -12.42
+2025-03-07 03:27:19,574 - INFO - Time: 1741318039.57s | Pan Error: -3.38, Tilt Error: 8.36
+2025-03-07 03:27:19,575 - INFO - Pan Angle: 23.22, Tilt Angle: 7.56
+2025-03-07 03:27:19,765 - INFO - Time: 1741318039.77s | Pan Error: -6.02, Tilt Error: -9.35
+2025-03-07 03:27:19,766 - INFO - Pan Angle: 26.19, Tilt Angle: 10.44
+2025-03-07 03:27:21,930 - INFO - Stream stats - Frame: 300, Size: 183295 bytes, Clients: 1
+2025-03-07 03:27:26,244 - INFO - Camera stopped
+2025-03-07 03:27:26,450 - INFO - Camera closed successfully.
